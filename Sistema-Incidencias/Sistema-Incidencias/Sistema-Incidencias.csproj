@@ -63,6 +63,12 @@
     <Compile Include="MenuSignUp.Designer.cs">
       <DependentUpon>MenuSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaIincio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaIincio.Designer.cs">
+      <DependentUpon>PantallaIincio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sign UpAdmin.cs">
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuSignUp.resx">
       <DependentUpon>MenuSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaIincio.resx">
+      <DependentUpon>PantallaIincio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LibreriaBD.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

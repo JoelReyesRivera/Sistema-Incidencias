@@ -28,5 +28,10 @@ namespace Sistema_Incidencias
             SignUpJefeDepartamento form = new SignUpJefeDepartamento();
             form.Show();
         }
+
+        private void btnTecnico_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

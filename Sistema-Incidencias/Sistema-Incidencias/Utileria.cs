@@ -8,7 +8,8 @@ namespace Sistema_Incidencias
 {
     public class Utileria
     {
-        static String conexion = "Data Source=LAPTOP-VEESUAN4\\JRR;Initial Catalog=SISTEMA_INCIDENCIAS;Integrated Security=True";
+        //static String conexion = "Data Source=LAPTOP-VEESUAN4\\JRR;Initial Catalog=SISTEMA_INCIDENCIAS;Integrated Security=True";
+        static String conexion = "Data Source=FERNANDO;Initial Catalog=SISTEMA_INCIDENCIAS;Integrated Security=True";
 
         public static  String GetConnectionString()
         {
