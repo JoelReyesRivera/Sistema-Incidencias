@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LibreriaBD">
+      <HintPath>..\..\..\..\4to Semestre\Programacion 2\Unidad 3\DepartamentosYEmpleados\DepartamentosYEmpleados\bin\Debug\LibreriaBD.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,16 +49,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejaDepartamento.cs" />
+    <Compile Include="ManejaUsuario.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSignUp.Designer.cs">
+      <DependentUpon>MenuSignUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sign UpAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign UpAdmin.Designer.cs">
+      <DependentUpon>Sign UpAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpJefeDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpJefeDepartamento.Designer.cs">
+      <DependentUpon>SignUpJefeDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utileria.cs" />
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSignUp.resx">
+      <DependentUpon>MenuSignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +93,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sign UpAdmin.resx">
+      <DependentUpon>Sign UpAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpJefeDepartamento.resx">
+      <DependentUpon>SignUpJefeDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

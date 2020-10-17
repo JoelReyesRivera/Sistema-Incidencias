@@ -10,26 +10,23 @@ using System.Windows.Forms;
 
 namespace Sistema_Incidencias
 {
-    public partial class FormMenuLogIn : Form
+    public partial class MenuSignUp : Form
     {
-        public ManejaUsuario usuarios;
-        public FormMenuLogIn()
+        public MenuSignUp()
         {
-            usuarios = new ManejaUsuario();
-
             InitializeComponent();
         }
 
-        private void FormMenuLogIn_Load(object sender, EventArgs e)
+        private void btnAmdin_Click(object sender, EventArgs e)
         {
-
+            frmSign_UpAdmin form = new frmSign_UpAdmin();
+            form.Show();
         }
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            MenuSignUp form = new MenuSignUp();
+            SignUpJefeDepartamento form = new SignUpJefeDepartamento();
             form.Show();
-
         }
     }
 }
