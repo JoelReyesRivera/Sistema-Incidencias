@@ -115,6 +115,7 @@
             this.cmbDepartamento.Name = "cmbDepartamento";
             this.cmbDepartamento.Size = new System.Drawing.Size(232, 25);
             this.cmbDepartamento.TabIndex = 18;
+            this.cmbDepartamento.SelectedIndexChanged += new System.EventHandler(this.cmbDepartamento_SelectedIndexChanged);
             // 
             // SignUpJefeDepartamento
             // 

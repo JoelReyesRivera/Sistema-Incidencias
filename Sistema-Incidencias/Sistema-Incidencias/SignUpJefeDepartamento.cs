@@ -33,5 +33,10 @@ namespace Sistema_Incidencias
           ManejaUsuario.AñadirJefe(txtUsuario.Text, txtPassword.Text, ManejaDepartamento.ObtenerDepartamentoId(cmbDepartamento.SelectedItem.ToString()));
 
         }
+
+        private void cmbDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

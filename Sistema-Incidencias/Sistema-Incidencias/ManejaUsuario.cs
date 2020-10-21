@@ -112,5 +112,36 @@ namespace Sistema_Incidencias
             MessageBox.Show("GUARDADO EXITOSAMENTE", "ADMINISTRADOR", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return true;
         }
+        public static bool AñadirTecnico(String usuario, String password, int departamentoTecnico)
+        {
+            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
+            if (connection == null)
+            {
+                foreach (SqlError item in UsoBD.ESalida.Errors)
+                {
+                    MessageBox.Show(item.Message);
+                }
+            }
+            string command = "INSERT INTO TECNICO(USUARIO, PASSWORD, DEPARTAMENTO_TECNICO)";
+            command += " VALUES(@Usuario, @password, @departamentoTecnico)";
+            SqlCommand comandoInsersion = new SqlCommand(command, connection);
+            comandoInsersion.Parameters.AddWithValue("@Usuario", usuario);
+            comandoInsersion.Parameters.AddWithValue("@password", password);
+            comandoInsersion.Parameters.AddWithValue("@departamentoTecnico", departamentoTecnico);
+
+            try
+            {
+                comandoInsersion.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+            MessageBox.Show("GUARDADO EXITOSAMENTE", "ADMINISTRADOR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return true;
+        }
     }
 }

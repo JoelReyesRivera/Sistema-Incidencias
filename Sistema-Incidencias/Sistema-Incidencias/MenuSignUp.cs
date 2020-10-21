@@ -31,7 +31,8 @@ namespace Sistema_Incidencias
 
         private void btnTecnico_Click(object sender, EventArgs e)
         {
-
+            SignUpTecnico form = new SignUpTecnico();
+            form.Show();
         }
     }
 }
