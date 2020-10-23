@@ -41,9 +41,10 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(115, 446);
+            this.btnRegistrar.Location = new System.Drawing.Point(86, 362);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(105, 46);
+            this.btnRegistrar.Size = new System.Drawing.Size(79, 37);
             this.btnRegistrar.TabIndex = 16;
             this.btnRegistrar.Text = "Sign up";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -53,36 +54,41 @@
             // 
             this.lblSignUp.AutoSize = true;
             this.lblSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignUp.Location = new System.Drawing.Point(98, 50);
+            this.lblSignUp.Location = new System.Drawing.Point(74, 41);
+            this.lblSignUp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSignUp.Name = "lblSignUp";
-            this.lblSignUp.Size = new System.Drawing.Size(162, 46);
+            this.lblSignUp.Size = new System.Drawing.Size(131, 37);
             this.lblSignUp.TabIndex = 15;
             this.lblSignUp.Text = "Sign Up";
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(80, 270);
+            this.txtPassword.Location = new System.Drawing.Point(60, 219);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(190, 34);
+            this.txtPassword.Size = new System.Drawing.Size(144, 28);
             this.txtPassword.TabIndex = 14;
             // 
             // txtUsuario
             // 
+            this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(80, 185);
+            this.txtUsuario.Location = new System.Drawing.Point(60, 150);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(190, 34);
+            this.txtUsuario.Size = new System.Drawing.Size(144, 28);
             this.txtUsuario.TabIndex = 13;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(90, 231);
+            this.lblPassword.Location = new System.Drawing.Point(68, 188);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(147, 36);
+            this.lblPassword.Size = new System.Drawing.Size(120, 29);
             this.lblPassword.TabIndex = 12;
             this.lblPassword.Text = "Password";
             // 
@@ -90,9 +96,10 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(109, 129);
+            this.lblUsuario.Location = new System.Drawing.Point(82, 105);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(119, 36);
+            this.lblUsuario.Size = new System.Drawing.Size(96, 29);
             this.lblUsuario.TabIndex = 11;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -100,9 +107,10 @@
             // 
             this.lblDepartamento.AutoSize = true;
             this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartamento.Location = new System.Drawing.Point(74, 320);
+            this.lblDepartamento.Location = new System.Drawing.Point(56, 260);
+            this.lblDepartamento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDepartamento.Name = "lblDepartamento";
-            this.lblDepartamento.Size = new System.Drawing.Size(200, 36);
+            this.lblDepartamento.Size = new System.Drawing.Size(165, 29);
             this.lblDepartamento.TabIndex = 17;
             this.lblDepartamento.Text = "Departamento";
             // 
@@ -111,17 +119,18 @@
             this.cmbDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.cmbDepartamento.FormattingEnabled = true;
-            this.cmbDepartamento.Location = new System.Drawing.Point(61, 378);
+            this.cmbDepartamento.Location = new System.Drawing.Point(46, 307);
+            this.cmbDepartamento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbDepartamento.Name = "cmbDepartamento";
-            this.cmbDepartamento.Size = new System.Drawing.Size(232, 25);
+            this.cmbDepartamento.Size = new System.Drawing.Size(175, 21);
             this.cmbDepartamento.TabIndex = 18;
             this.cmbDepartamento.SelectedIndexChanged += new System.EventHandler(this.cmbDepartamento_SelectedIndexChanged);
             // 
             // SignUpJefeDepartamento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 504);
+            this.ClientSize = new System.Drawing.Size(271, 410);
             this.Controls.Add(this.cmbDepartamento);
             this.Controls.Add(this.lblDepartamento);
             this.Controls.Add(this.btnRegistrar);
@@ -130,6 +139,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsuario);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SignUpJefeDepartamento";
             this.Text = "SignUpJefeDepartamento";
             this.Load += new System.EventHandler(this.SignUpJefeDepartamento_Load);
