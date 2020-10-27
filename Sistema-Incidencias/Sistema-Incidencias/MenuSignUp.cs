@@ -20,19 +20,19 @@ namespace Sistema_Incidencias
         private void btnAmdin_Click(object sender, EventArgs e)
         {
             frmSign_UpAdmin form = new frmSign_UpAdmin();
-            form.Show();
+            form.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SignUpJefeDepartamento form = new SignUpJefeDepartamento();
-            form.Show();
+            SignUpJefeDepartamento signUpJefeDepartamento = new SignUpJefeDepartamento();
+            signUpJefeDepartamento.ShowDialog();
         }
 
         private void btnTecnico_Click(object sender, EventArgs e)
         {
             SignUpTecnico form = new SignUpTecnico();
-            form.Show();
+            form.ShowDialog();
         }
     }
 }

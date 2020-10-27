@@ -50,11 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="SignUpTecnico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SignUpTecnico.Designer.cs">
+      <DependentUpon>SignUpTecnico.cs</DependentUpon>
     </Compile>
     <Compile Include="ManejaDepartamento.cs" />
     <Compile Include="ManejaUsuario.cs" />
@@ -91,8 +91,8 @@
       <DependentUpon>SignUpJefeDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Utileria.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="SignUpTecnico.resx">
+      <DependentUpon>SignUpTecnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

@@ -48,14 +48,9 @@ namespace Sistema_Incidencias
             else
             {
                  ManejaUsuario.AñadirJefe(txtUsuario.Text, txtPassword.Text, ManejaDepartamento.ObtenerDepartamentoId(cmbDepartamento.SelectedItem.ToString()));
-            
+                this.Close();
             }
            
-        }
-
-        private void cmbDepartamento_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private bool ValidaDatos()
@@ -78,8 +73,6 @@ namespace Sistema_Incidencias
                 MessageBox.Show("NO HA SELECCIONADO EL TIPO DE DEPARTAMENTO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-
-
 
             return true;
         }

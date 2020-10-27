@@ -86,16 +86,7 @@ namespace Sistema_Incidencias
             }
             if (Lector.HasRows)
             {
-                if (Lector.Read())
-
-                {
-                    if (nombre.Equals(Lector.GetValue(0).ToString()))
-                    {
-                        encontro = true;
-                    }
-
-                }
-
+                    encontro = true;
             }
             Conecta.Close();
             return encontro;

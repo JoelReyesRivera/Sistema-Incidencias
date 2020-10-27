@@ -28,7 +28,7 @@ namespace Sistema_Incidencias
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             MenuSignUp form = new MenuSignUp();
-            form.Show();
+            form.ShowDialog();
 
         }
 
