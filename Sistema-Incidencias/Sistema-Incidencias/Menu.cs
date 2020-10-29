@@ -82,8 +82,23 @@ namespace Sistema_Incidencias
                     break;
                 }
             }
-            PantallaIincio P = new PantallaIincio(TipoUsuario);
-            P.ShowDialog();
+            NextPantalla(TipoUsuario);
+        }
+        private void NextPantalla(string TipoUsuario)
+        {
+            switch (TipoUsuario)
+            {
+                case "JEFE_DEPARTAMENTO":
+                    //PANTALLA DE JEFE DEPARTAMENTO
+                    break;
+                case "TECNICO":
+                    //PANTALLA TECNICO
+                    break;
+                case "ADMINISTRADOR":
+                    MenuAdmin A = new MenuAdmin();
+                    A.ShowDialog();
+                    break;
+            }
         }
         private bool ValidaDatos()
         {

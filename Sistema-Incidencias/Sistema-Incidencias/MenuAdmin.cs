@@ -10,18 +10,22 @@ using System.Windows.Forms;
 
 namespace Sistema_Incidencias
 {
-    public partial class PantallaIincio : Form
+    public partial class MenuAdmin : Form
     {
-        string TipoUsuario;
-        public PantallaIincio(string TipoUsuario)
+        public MenuAdmin()
         {
             InitializeComponent();
-            this.TipoUsuario = TipoUsuario;
         }
 
         private void PantallaIincio_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregaDispositivo A = new AgregaDispositivo();
+            A.ShowDialog();
         }
     }
 }

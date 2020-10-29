@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregaDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregaDispositivo.Designer.cs">
+      <DependentUpon>AgregaDispositivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpTecnico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,11 +76,11 @@
     <Compile Include="MenuSignUp.Designer.cs">
       <DependentUpon>MenuSignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="PantallaIincio.cs">
+    <Compile Include="MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PantallaIincio.Designer.cs">
-      <DependentUpon>PantallaIincio.cs</DependentUpon>
+    <Compile Include="MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,6 +97,9 @@
       <DependentUpon>SignUpJefeDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Utileria.cs" />
+    <EmbeddedResource Include="AgregaDispositivo.resx">
+      <DependentUpon>AgregaDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUpTecnico.resx">
       <DependentUpon>SignUpTecnico.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,8 +109,8 @@
     <EmbeddedResource Include="MenuSignUp.resx">
       <DependentUpon>MenuSignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PantallaIincio.resx">
-      <DependentUpon>PantallaIincio.cs</DependentUpon>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
