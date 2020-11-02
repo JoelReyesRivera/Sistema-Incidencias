@@ -185,9 +185,9 @@ namespace Sistema_Incidencias
             }
             catch (SqlException Ex)
             {
-                /*MessageBox.Show("ERROR", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ERROR", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 foreach (SqlError Error in Ex.Errors)
-                   MessageBox.Show(Error.Message);*/
+                   MessageBox.Show(Error.Message);
                 Conecta.Close();
             }
             R = Convert.ToInt32(returnParameter.Value);

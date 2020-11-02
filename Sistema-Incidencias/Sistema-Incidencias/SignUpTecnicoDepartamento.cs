@@ -11,9 +11,9 @@ using LibreriaBD;
 
 namespace Sistema_Incidencias
 {
-    public partial class SignUpTecnico : Form
+    public partial class SignUpTecnicoDepartamento : Form
     {
-        public SignUpTecnico()
+        public SignUpTecnicoDepartamento()
         {
             InitializeComponent();
         }

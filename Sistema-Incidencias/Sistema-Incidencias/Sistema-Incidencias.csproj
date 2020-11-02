@@ -56,19 +56,31 @@
     <Compile Include="AgregaDispositivo.Designer.cs">
       <DependentUpon>AgregaDispositivo.cs</DependentUpon>
     </Compile>
-    <Compile Include="SignUpTecnico.cs">
+    <Compile Include="frmMenuPrincipalTecnico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignUpTecnico.Designer.cs">
-      <DependentUpon>SignUpTecnico.cs</DependentUpon>
+    <Compile Include="frmMenuPrincipalTecnico.Designer.cs">
+      <DependentUpon>frmMenuPrincipalTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateTecnico.Designer.cs">
+      <DependentUpon>frmUpdateTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpTecnicoDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpTecnicoDepartamento.Designer.cs">
+      <DependentUpon>SignUpTecnicoDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="ManejaDepartamento.cs" />
     <Compile Include="ManejaUsuario.cs" />
-    <Compile Include="Menu.cs">
+    <Compile Include="frmLogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="frmLogIn.Designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuSignUp.cs">
       <SubType>Form</SubType>
@@ -96,15 +108,22 @@
     <Compile Include="SignUpJefeDepartamento.Designer.cs">
       <DependentUpon>SignUpJefeDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tecnico.cs" />
     <Compile Include="Utileria.cs" />
     <EmbeddedResource Include="AgregaDispositivo.resx">
       <DependentUpon>AgregaDispositivo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignUpTecnico.resx">
-      <DependentUpon>SignUpTecnico.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenuPrincipalTecnico.resx">
+      <DependentUpon>frmMenuPrincipalTecnico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="frmUpdateTecnico.resx">
+      <DependentUpon>frmUpdateTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpTecnicoDepartamento.resx">
+      <DependentUpon>SignUpTecnicoDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuSignUp.resx">
       <DependentUpon>MenuSignUp.cs</DependentUpon>

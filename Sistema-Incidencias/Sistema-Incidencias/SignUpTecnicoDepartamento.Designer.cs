@@ -1,6 +1,6 @@
 ﻿namespace Sistema_Incidencias
 {
-    partial class SignUpTecnico
+    partial class SignUpTecnicoDepartamento
     {
         /// <summary>
         /// Required designer variable.

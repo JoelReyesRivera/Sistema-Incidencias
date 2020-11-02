@@ -24,7 +24,6 @@ namespace Sistema_Incidencias
             }
             String comando = "SELECT PASSWORD FROM USUARIO WHERE NOMBRE = " + nombre;
             SqlDataReader lector = null;
-            lector = UsoBD.Consulta(comando, connection);
             SqlCommand sqlCommand = new SqlCommand(comando, connection);
             try
             {
@@ -47,6 +46,7 @@ namespace Sistema_Incidencias
                 }
 
             }
+            lector.Close();
             connection.Close();
             return autenticado;
         }
@@ -143,5 +143,74 @@ namespace Sistema_Incidencias
             MessageBox.Show("GUARDADO EXITOSAMENTE", "ADMINISTRADOR", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return true;
         }
+
+        public static Tecnico GetTecnico(String nombre)
+        {
+
+            Tecnico tecnico = null;
+            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
+            if (connection == null)
+            {
+                foreach (SqlError item in UsoBD.ESalida.Errors)
+                {
+                    MessageBox.Show(item.Message);
+                }
+                return tecnico;
+            }
+            SqlDataReader lector = null;
+            String comando = "SELECT USUARIO,PASSWORD,D.NOMBRE FROM TECNICO T INNER JOIN DEPARTAMENTO_TECNICO D ON T.DEPARTAMENTO_TECNICO = D.ID  WHERE T.USUARIO =  '" + nombre + "'";
+            SqlCommand sqlCommand = new SqlCommand(comando, connection);
+            try
+            {
+                lector = sqlCommand.ExecuteReader();
+            }
+            catch (SqlException ex)
+            {
+                foreach (SqlError item in ex.Errors)
+                {
+                    MessageBox.Show(item.Message.ToString());
+                }
+                connection.Close();
+                return tecnico;
+            }
+            if (lector.Read())
+            {
+                String usuario = lector.GetValue(0).ToString();
+                String password = lector.GetValue(1).ToString();
+                String departamento = lector.GetValue(2).ToString();
+                tecnico = new Tecnico(usuario, password, departamento);
+            }
+            connection.Close();
+            return tecnico;
+        }
+        public static bool ActualizarDepartamentoTecnico(String usuario, int departamentoTecnico)
+        {
+            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
+            if (connection == null)
+            {
+                foreach (SqlError item in UsoBD.ESalida.Errors)
+                {
+                    MessageBox.Show(item.Message);
+                }
+            }
+            string command = "UPDATE TECNICO SET DEPARTAMENTO_TECNICO = @departamentoTecnico WHERE USUARIO= @Usuario";
+            SqlCommand comandoInsersion = new SqlCommand(command, connection);
+            comandoInsersion.Parameters.AddWithValue("@Usuario", usuario);
+            comandoInsersion.Parameters.AddWithValue("@departamentoTecnico", departamentoTecnico);
+            try
+            {
+                comandoInsersion.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+            MessageBox.Show("ACTUALIZADO EXITOSAMENTE", "TECNICO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return true;
+        }
     }
+
 }

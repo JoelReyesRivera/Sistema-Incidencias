@@ -47,7 +47,7 @@ namespace Sistema_Incidencias
             return list;
         }
        
-        public static int ObtenerDepartamentoId(String nombre)
+        public static int ObtenerDepartamentoTecnicoId(String nombre)
         {
             int valor = -1;
             SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
@@ -60,7 +60,7 @@ namespace Sistema_Incidencias
                 }
             }
             SqlDataReader lector = null;
-            String comando = "SELECT  id FROM DEPARTAMENTO WHERE Nombre = '" + nombre + "'";
+            String comando = "SELECT  id FROM DEPARTAMENTO_TECNICO WHERE Nombre = '" + nombre + "'";
             SqlCommand sqlCommand = new SqlCommand(comando, connection);
             try
             {
@@ -78,6 +78,42 @@ namespace Sistema_Incidencias
             while (lector.Read())
             {
                  valor =  Int16.Parse(lector.GetValue(0).ToString());
+            }
+            connection.Close();
+            return valor;
+        }
+
+        public static int ObtenerDepartamentoId(String nombre)
+        {
+            int valor = -1;
+            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
+            if (connection == null)
+            {
+                foreach (SqlError item in UsoBD.ESalida.Errors)
+                {
+                    connection.Close();
+                    MessageBox.Show(item.Message);
+                }
+            }
+            SqlDataReader lector = null;
+            String comando = "SELECT  id FROM DEPARTAMENT WHERE Nombre = '" + nombre + "'";
+            SqlCommand sqlCommand = new SqlCommand(comando, connection);
+            try
+            {
+                lector = sqlCommand.ExecuteReader();
+            }
+            catch (SqlException ex)
+            {
+                foreach (SqlError item in ex.Errors)
+                {
+                    MessageBox.Show(item.Message.ToString());
+                }
+                connection.Close();
+                return valor;
+            }
+            while (lector.Read())
+            {
+                valor = Int16.Parse(lector.GetValue(0).ToString());
             }
             connection.Close();
             return valor;
@@ -119,40 +155,5 @@ namespace Sistema_Incidencias
             return list;
         }
 
-        public static int ObtenerDepartamentoTecnicoId(String nombre)
-        {
-            int valor = -1;
-            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
-            if (connection == null)
-            {
-                foreach (SqlError item in UsoBD.ESalida.Errors)
-                {
-                    connection.Close();
-                    MessageBox.Show(item.Message);
-                }
-            }
-            SqlDataReader lector = null;
-            String comando = "SELECT  id FROM DEPARTAMENTO_TECNICO WHERE Nombre = '" + nombre+ "'";
-            SqlCommand sqlCommand = new SqlCommand(comando, connection);
-            try
-            {
-                lector = sqlCommand.ExecuteReader();
-            }
-            catch (SqlException ex)
-            {
-                foreach (SqlError item in ex.Errors)
-                {
-                    MessageBox.Show(item.Message.ToString());
-                }
-                connection.Close();
-                return valor;
-            }
-            while (lector.Read())
-            {
-                valor = Int16.Parse(lector.GetValue(0).ToString());
-            }
-            connection.Close();
-            return valor;
-        }
     }
 }
