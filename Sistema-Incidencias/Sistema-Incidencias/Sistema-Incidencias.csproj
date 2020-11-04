@@ -68,6 +68,7 @@
     <Compile Include="frmUpdateTecnico.Designer.cs">
       <DependentUpon>frmUpdateTecnico.cs</DependentUpon>
     </Compile>
+    <Compile Include="Jefe.cs" />
     <Compile Include="SignUpTecnicoDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>

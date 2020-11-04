@@ -73,7 +73,7 @@ namespace Sistema_Incidencias
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
-                 connection.Close();
+                connection.Close();
                 return false;
             }
             connection.Close();
@@ -211,6 +211,80 @@ namespace Sistema_Incidencias
             MessageBox.Show("ACTUALIZADO EXITOSAMENTE", "TECNICO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return true;
         }
+
+
+
+        public static Jefe GetJefe(String nombre)
+        {
+
+            Jefe jefe = null;
+            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
+            if (connection == null)
+            {
+                foreach (SqlError item in UsoBD.ESalida.Errors)
+                {
+                    MessageBox.Show(item.Message);
+                }
+                return jefe;
+            }
+            
+            SqlDataReader lector = null;
+            String comando = "SELECT USUARIO, PASSWORD, D.NOMBRE FROM JEFE_DEPARTAMENTO J INNER JOIN DEPARTAMENTO D ON J.DEPARTAMENTO = D.ID  WHERE J.USUARIO = '" + nombre + "'";
+            SqlCommand sqlCommand = new SqlCommand(comando, connection);
+            try
+            {
+                lector = sqlCommand.ExecuteReader();
+            }
+            catch (SqlException ex)
+            {
+                foreach (SqlError item in ex.Errors)
+                {
+                    MessageBox.Show(item.Message.ToString());
+                }
+                connection.Close();
+                return jefe;
+            }
+            if (lector.Read())
+            {
+                String usuario = lector.GetValue(0).ToString();
+                String password = lector.GetValue(1).ToString();
+                String departamento = lector.GetValue(2).ToString();
+                jefe = new Jefe(usuario, password, departamento);
+            }
+            connection.Close();
+            return jefe;
+        }
+
+        public static bool ActualizarDepartamentoJefe(String usuario, int departamentoJefe)
+        {
+            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
+            if (connection == null)
+            {
+                foreach (SqlError item in UsoBD.ESalida.Errors)
+                {
+                    MessageBox.Show(item.Message);
+                }
+            }
+            string command = "UPDATE JEFE_DEPARTAMENTO SET DEPARTAMENTO = @departamentoJefe WHERE USUARIO= @Usuario";
+            SqlCommand comandoInsersion = new SqlCommand(command, connection);
+            comandoInsersion.Parameters.AddWithValue("@Usuario", usuario);
+            comandoInsersion.Parameters.AddWithValue("@departamentoJefe", departamentoJefe);
+            try
+            {
+                comandoInsersion.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+            MessageBox.Show("ACTUALIZADO EXITOSAMENTE", "JEFE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return true;
+        }
+
+
     }
 
 }
