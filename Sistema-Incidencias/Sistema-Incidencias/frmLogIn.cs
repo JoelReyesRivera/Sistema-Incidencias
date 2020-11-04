@@ -89,7 +89,8 @@ namespace Sistema_Incidencias
             switch (TipoUsuario)
             {
                 case "JEFE_DEPARTAMENTO":
-                    //PANTALLA DE JEFE DEPARTAMENTO
+                    frmMenuPrincipalJefeDep JD = new frmMenuPrincipalJefeDep(Usuario);
+                    JD.ShowDialog();
                     break;
                 case "TECNICO":
                     frmMenuPrincipalTecnico menu = new frmMenuPrincipalTecnico(Usuario);

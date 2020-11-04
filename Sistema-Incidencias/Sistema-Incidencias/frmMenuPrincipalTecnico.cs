@@ -24,5 +24,10 @@ namespace Sistema_Incidencias
             frmUpdateTecnico frm = new frmUpdateTecnico(Usuario);
             frm.ShowDialog();
         }
+
+        private void periflToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

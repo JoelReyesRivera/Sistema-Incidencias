@@ -56,11 +56,23 @@
     <Compile Include="AgregaDispositivo.Designer.cs">
       <DependentUpon>AgregaDispositivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMenuPrincipalJefeDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipalJefeDep.Designer.cs">
+      <DependentUpon>frmMenuPrincipalJefeDep.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenuPrincipalTecnico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMenuPrincipalTecnico.Designer.cs">
       <DependentUpon>frmMenuPrincipalTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateJefe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateJefe.Designer.cs">
+      <DependentUpon>frmUpdateJefe.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUpdateTecnico.cs">
       <SubType>Form</SubType>
@@ -114,8 +126,14 @@
     <EmbeddedResource Include="AgregaDispositivo.resx">
       <DependentUpon>AgregaDispositivo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipalJefeDep.resx">
+      <DependentUpon>frmMenuPrincipalJefeDep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipalTecnico.resx">
       <DependentUpon>frmMenuPrincipalTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateJefe.resx">
+      <DependentUpon>frmUpdateJefe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateTecnico.resx">
       <DependentUpon>frmUpdateTecnico.cs</DependentUpon>
