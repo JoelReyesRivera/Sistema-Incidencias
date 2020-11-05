@@ -17,14 +17,13 @@ namespace Sistema_Incidencias
         public SignUpJefeDepartamento()
         {
             InitializeComponent();
+            cmbDepartamento.SelectedIndex = -1;
         }
 
         private void SignUpJefeDepartamento_Load(object sender, EventArgs e)
         {
             List<String> departamentos = ManejaDepartamento.ObtenerDepartamentos();
             cmbDepartamento.Items.Clear();
-            cmbDepartamento.SelectedItem = 0;
-
             foreach (var dep in departamentos)
             {
                 cmbDepartamento.Items.Add(dep);
@@ -68,7 +67,7 @@ namespace Sistema_Incidencias
                 MessageBox.Show("NO HA PROPORCIONADO UNA CONTRASEÑA", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            if (cmbDepartamento.SelectedIndex==0)
+            if (cmbDepartamento.SelectedIndex==-1)
             {
                 MessageBox.Show("NO HA SELECCIONADO EL TIPO DE DEPARTAMENTO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;

@@ -96,7 +96,7 @@ namespace Sistema_Incidencias
                 }
             }
             SqlDataReader lector = null;
-            String comando = "SELECT  id FROM DEPARTAMENT WHERE Nombre = '" + nombre + "'";
+            String comando = "SELECT  id FROM DEPARTAMENTO WHERE Nombre = '" + nombre + "'";
             SqlCommand sqlCommand = new SqlCommand(comando, connection);
             try
             {
