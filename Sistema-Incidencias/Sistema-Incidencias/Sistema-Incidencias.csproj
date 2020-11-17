@@ -56,6 +56,19 @@
     <Compile Include="AgregaDispositivo.Designer.cs">
       <DependentUpon>AgregaDispositivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aula.cs" />
+    <Compile Include="frmAgragarAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgragarAula.Designer.cs">
+      <DependentUpon>frmAgragarAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarAulasAsignadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarAulasAsignadas.Designer.cs">
+      <DependentUpon>frmConsultarAulasAsignadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenuPrincipalJefeDep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +94,7 @@
       <DependentUpon>frmUpdateTecnico.cs</DependentUpon>
     </Compile>
     <Compile Include="Jefe.cs" />
+    <Compile Include="ManejaAulas.cs" />
     <Compile Include="SignUpTecnicoDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +139,12 @@
     <Compile Include="Utileria.cs" />
     <EmbeddedResource Include="AgregaDispositivo.resx">
       <DependentUpon>AgregaDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgragarAula.resx">
+      <DependentUpon>frmAgragarAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarAulasAsignadas.resx">
+      <DependentUpon>frmConsultarAulasAsignadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipalJefeDep.resx">
       <DependentUpon>frmMenuPrincipalJefeDep.cs</DependentUpon>

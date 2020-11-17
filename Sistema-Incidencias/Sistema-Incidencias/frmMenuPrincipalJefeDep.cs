@@ -25,5 +25,17 @@ namespace Sistema_Incidencias
             frmUpdateJefe frm = new frmUpdateJefe(Usuario);
             frm.ShowDialog();
         }
+
+        private void agregarAulaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAgregarAulas frmAgregarAulas = new frmAgregarAulas(Usuario);
+            frmAgregarAulas.ShowDialog();
+        }
+
+        private void verAulasAsignadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultarAulasAsignadas frmConsultarAulasAsignadas = new frmConsultarAulasAsignadas(Usuario);
+            frmConsultarAulasAsignadas.ShowDialog();
+        }
     }
 }
