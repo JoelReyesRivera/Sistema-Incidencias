@@ -27,5 +27,23 @@ namespace Sistema_Incidencias
             AgregaDispositivo A = new AgregaDispositivo();
             A.ShowDialog();
         }
+
+        private void agregarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmAgregarDepartamento AgregarDepto = new frmAgregarDepartamento();
+            AgregarDepto.ShowDialog();
+        }
+
+        private void agregarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmAgregarDepartamentoTecnico AgregarDeptoTecnico = new frmAgregarDepartamentoTecnico();
+            AgregarDeptoTecnico.ShowDialog();
+        }
+
+        private void agregarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            frmUpdateAula Update = new frmUpdateAula();
+            Update.ShowDialog();
+        }
     }
 }

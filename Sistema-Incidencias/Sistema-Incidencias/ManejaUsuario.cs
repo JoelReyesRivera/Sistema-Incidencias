@@ -284,6 +284,72 @@ namespace Sistema_Incidencias
             return true;
         }
 
+        public static List<String> ObtenerJefeDepto()
+        {
+            List<String> list = new List<string>();
+            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
+            if (connection == null)
+            {
+                foreach (SqlError item in UsoBD.ESalida.Errors)
+                {
+                    connection.Close();
+                    MessageBox.Show(item.Message);
+                }
+            }
+            SqlDataReader lector = null;
+            String comando = "SELECT USUARIO FROM JEFE_DEPARTAMENTO";
+            SqlCommand sqlCommand = new SqlCommand(comando, connection);
+            try
+            {
+                lector = sqlCommand.ExecuteReader();
+            }
+            catch (SqlException ex)
+            {
+                foreach (SqlError item in ex.Errors)
+                {
+                    MessageBox.Show(item.Message.ToString());
+                }
+                connection.Close();
+                return list;
+            }
+            while (lector.Read())
+            {
+                list.Add(lector.GetValue(0).ToString());
+            }
+            connection.Close();
+            return list;
+        }
+        public static bool AgregarAula(String Descripcion, string Usuario)
+        {
+
+            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
+            if (connection == null)
+            {
+                foreach (SqlError item in UsoBD.ESalida.Errors)
+                {
+                    MessageBox.Show(item.Message);
+                }
+            }
+            string command = "INSERT INTO AULA(DESCRIPCION, USUARIO)";
+            command += " VALUES(@Descripcion, @Usuario)";
+            SqlCommand comandoInsersion = new SqlCommand(command, connection);
+            comandoInsersion.Parameters.AddWithValue("@Descripcion", Descripcion);
+            comandoInsersion.Parameters.AddWithValue("@Usuario", Usuario);
+
+            try
+            {
+                comandoInsersion.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+            MessageBox.Show("GUARDADO EXITOSAMENTE", "ADMINISTRADOR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return true;
+        }
 
     }
 

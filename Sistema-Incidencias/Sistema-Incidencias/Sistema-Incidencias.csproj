@@ -63,6 +63,24 @@
     <Compile Include="frmAgragarAula.Designer.cs">
       <DependentUpon>frmAgragarAula.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUpdateAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateAula.Designer.cs">
+      <DependentUpon>frmUpdateAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarDepartamento.Designer.cs">
+      <DependentUpon>frmAgregarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarDepartamentoTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarDepartamentoTecnico.Designer.cs">
+      <DependentUpon>frmAgregarDepartamentoTecnico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultarAulasAsignadas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +160,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgragarAula.resx">
       <DependentUpon>frmAgragarAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateAula.resx">
+      <DependentUpon>frmUpdateAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarDepartamento.resx">
+      <DependentUpon>frmAgregarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarDepartamentoTecnico.resx">
+      <DependentUpon>frmAgregarDepartamentoTecnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultarAulasAsignadas.resx">
       <DependentUpon>frmConsultarAulasAsignadas.cs</DependentUpon>
