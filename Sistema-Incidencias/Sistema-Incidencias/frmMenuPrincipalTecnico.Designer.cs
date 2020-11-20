@@ -31,6 +31,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.periflToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.incidenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.finalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -38,6 +41,7 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.incidenciaToolStripMenuItem,
             this.periflToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -62,6 +66,27 @@
             this.actualizarDepartamentoToolStripMenuItem.Text = "Actualizar Departamento";
             this.actualizarDepartamentoToolStripMenuItem.Click += new System.EventHandler(this.actualizarDepartamentoToolStripMenuItem_Click);
             // 
+            // incidenciaToolStripMenuItem
+            // 
+            this.incidenciaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.finalizarToolStripMenuItem,
+            this.consultarToolStripMenuItem});
+            this.incidenciaToolStripMenuItem.Name = "incidenciaToolStripMenuItem";
+            this.incidenciaToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.incidenciaToolStripMenuItem.Text = "Incidencia";
+            // 
+            // finalizarToolStripMenuItem
+            // 
+            this.finalizarToolStripMenuItem.Name = "finalizarToolStripMenuItem";
+            this.finalizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.finalizarToolStripMenuItem.Text = "Finalizar";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
             // frmMenuPrincipalTecnico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -69,7 +94,7 @@
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMenuPrincipalTecnico";
             this.Text = "Menu Principal";
             this.menuStrip1.ResumeLayout(false);
@@ -84,5 +109,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem periflToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarDepartamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem incidenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem finalizarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
     }
 }

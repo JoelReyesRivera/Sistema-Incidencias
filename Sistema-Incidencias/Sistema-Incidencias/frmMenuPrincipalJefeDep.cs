@@ -37,5 +37,21 @@ namespace Sistema_Incidencias
             frmConsultarAulasAsignadas frmConsultarAulasAsignadas = new frmConsultarAulasAsignadas(Usuario);
             frmConsultarAulasAsignadas.ShowDialog();
         }
+
+        private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMenuPrincipalJefeDep_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAltaIncidencia I = new frmAltaIncidencia(Usuario);
+            I.ShowDialog();
+        }
     }
 }

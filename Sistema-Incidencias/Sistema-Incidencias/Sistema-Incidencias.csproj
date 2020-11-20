@@ -63,6 +63,12 @@
     <Compile Include="frmAgragarAula.Designer.cs">
       <DependentUpon>frmAgragarAula.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAltaIncidencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaIncidencia.Designer.cs">
+      <DependentUpon>frmAltaIncidencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUpdateAula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgragarAula.resx">
       <DependentUpon>frmAgragarAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaIncidencia.resx">
+      <DependentUpon>frmAltaIncidencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateAula.resx">
       <DependentUpon>frmUpdateAula.cs</DependentUpon>
