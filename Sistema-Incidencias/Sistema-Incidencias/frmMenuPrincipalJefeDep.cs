@@ -53,5 +53,17 @@ namespace Sistema_Incidencias
             frmAltaIncidencia I = new frmAltaIncidencia(Usuario);
             I.ShowDialog();
         }
+
+        private void individualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaIncidenciasIndividualJefe I = new frmConsultaIncidenciasIndividualJefe(Usuario);
+            I.ShowDialog();
+        }
+
+        private void todasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaIncidenciasJefe J = new frmConsultaIncidenciasJefe(Usuario);
+            J.ShowDialog();
+        }
     }
 }

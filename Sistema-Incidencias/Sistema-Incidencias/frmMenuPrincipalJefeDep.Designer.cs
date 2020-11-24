@@ -31,12 +31,14 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.incidenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aulasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarAulaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verAulasAsignadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.individualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.todasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +71,16 @@
             this.altaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
+            // 
+            // consultasToolStripMenuItem
+            // 
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.individualToolStripMenuItem,
+            this.todasToolStripMenuItem});
+            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem.Text = "Consulta";
+            this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
             // perfilToolStripMenuItem
             // 
@@ -108,12 +120,19 @@
             this.verAulasAsignadasToolStripMenuItem.Text = "Ver Aulas Asignadas";
             this.verAulasAsignadasToolStripMenuItem.Click += new System.EventHandler(this.verAulasAsignadasToolStripMenuItem_Click);
             // 
-            // consultasToolStripMenuItem
+            // individualToolStripMenuItem
             // 
-            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.consultasToolStripMenuItem.Text = "Consulta";
-            this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
+            this.individualToolStripMenuItem.Name = "individualToolStripMenuItem";
+            this.individualToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.individualToolStripMenuItem.Text = "Individual";
+            this.individualToolStripMenuItem.Click += new System.EventHandler(this.individualToolStripMenuItem_Click);
+            // 
+            // todasToolStripMenuItem
+            // 
+            this.todasToolStripMenuItem.Name = "todasToolStripMenuItem";
+            this.todasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.todasToolStripMenuItem.Text = "Todas";
+            this.todasToolStripMenuItem.Click += new System.EventHandler(this.todasToolStripMenuItem_Click);
             // 
             // frmMenuPrincipalJefeDep
             // 
@@ -143,5 +162,7 @@
         private System.Windows.Forms.ToolStripMenuItem incidenciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem individualToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem todasToolStripMenuItem;
     }
 }

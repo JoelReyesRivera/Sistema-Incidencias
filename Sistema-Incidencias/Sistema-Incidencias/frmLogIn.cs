@@ -97,7 +97,7 @@ namespace Sistema_Incidencias
                     menu.ShowDialog();
                     break;
                 case "ADMINISTRADOR":
-                    MenuAdmin A = new MenuAdmin();
+                    frmMenuPrincipalAdmin A = new frmMenuPrincipalAdmin();
                     A.ShowDialog();
                     break;
             }

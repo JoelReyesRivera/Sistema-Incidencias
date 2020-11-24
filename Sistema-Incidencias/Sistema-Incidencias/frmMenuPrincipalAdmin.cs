@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_Incidencias
 {
-    public partial class MenuAdmin : Form
+    public partial class frmMenuPrincipalAdmin : Form
     {
-        public MenuAdmin()
+        public frmMenuPrincipalAdmin()
         {
             InitializeComponent();
         }
@@ -44,6 +44,23 @@ namespace Sistema_Incidencias
         {
             frmUpdateAula Update = new frmUpdateAula();
             Update.ShowDialog();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void individualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaIncidenciasIndividual I = new frmConsultaIncidenciasIndividual();
+            I.ShowDialog();
+        }
+
+        private void todasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaIncidencias C = new frmConsultaIncidencias();
+            C.ShowDialog();
         }
     }
 }
