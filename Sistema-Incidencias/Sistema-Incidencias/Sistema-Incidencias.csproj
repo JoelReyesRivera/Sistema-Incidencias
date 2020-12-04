@@ -56,6 +56,12 @@
     <Compile Include="AgregaDispositivo.Designer.cs">
       <DependentUpon>AgregaDispositivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaIncidenciaTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaIncidenciaTecnico.Designer.cs">
+      <DependentUpon>AltaIncidenciaTecnico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Aula.cs" />
     <Compile Include="frmAgragarAula.cs">
       <SubType>Form</SubType>
@@ -143,6 +149,7 @@
     </Compile>
     <Compile Include="Jefe.cs" />
     <Compile Include="ManejaAulas.cs" />
+    <Compile Include="ManejaIncidencia.cs" />
     <Compile Include="SignUpTecnicoDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +194,9 @@
     <Compile Include="Utileria.cs" />
     <EmbeddedResource Include="AgregaDispositivo.resx">
       <DependentUpon>AgregaDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaIncidenciaTecnico.resx">
+      <DependentUpon>AltaIncidenciaTecnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgragarAula.resx">
       <DependentUpon>frmAgragarAula.cs</DependentUpon>

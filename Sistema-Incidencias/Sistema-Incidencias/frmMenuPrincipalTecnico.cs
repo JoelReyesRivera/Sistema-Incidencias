@@ -29,5 +29,11 @@ namespace Sistema_Incidencias
         {
 
         }
+
+        private void altaIncidenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaIncidenciaTecnico altaIncidencia = new AltaIncidenciaTecnico();
+            altaIncidencia.ShowDialog();
+        }
     }
 }
