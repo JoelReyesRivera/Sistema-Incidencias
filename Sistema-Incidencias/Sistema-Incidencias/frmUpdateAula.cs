@@ -12,7 +12,7 @@ namespace Sistema_Incidencias
 {
     public partial class frmUpdateAula : Form
     {
-        ManejaAulas manejaAulas;
+        
         public frmUpdateAula()
         {
             InitializeComponent();

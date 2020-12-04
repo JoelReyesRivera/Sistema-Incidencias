@@ -62,5 +62,11 @@ namespace Sistema_Incidencias
             frmConsultaIncidencias C = new frmConsultaIncidencias();
             C.ShowDialog();
         }
+
+        private void asignarTécnicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaIncidenciaTecnico altaIncidencia = new AltaIncidenciaTecnico();
+            altaIncidencia.ShowDialog();
+        }
     }
 }

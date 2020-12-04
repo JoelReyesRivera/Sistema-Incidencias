@@ -93,11 +93,29 @@
     <Compile Include="frmConsultaIncidenciasIndividualJefe.Designer.cs">
       <DependentUpon>frmConsultaIncidenciasIndividualJefe.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaIncidenciasIndividualTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaIncidenciasIndividualTecnico.Designer.cs">
+      <DependentUpon>frmConsultaIncidenciasIndividualTecnico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaIncidenciasJefe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmConsultaIncidenciasJefe.Designer.cs">
       <DependentUpon>frmConsultaIncidenciasJefe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaTodasIncidenciasTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaTodasIncidenciasTecnico.Designer.cs">
+      <DependentUpon>frmConsultaTodasIncidenciasTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIncidenciaConcluida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIncidenciaConcluida.Designer.cs">
+      <DependentUpon>frmIncidenciaConcluida.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUpdateAula.cs">
       <SubType>Form</SubType>
@@ -213,8 +231,17 @@
     <EmbeddedResource Include="frmConsultaIncidenciasIndividualJefe.resx">
       <DependentUpon>frmConsultaIncidenciasIndividualJefe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaIncidenciasIndividualTecnico.resx">
+      <DependentUpon>frmConsultaIncidenciasIndividualTecnico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaIncidenciasJefe.resx">
       <DependentUpon>frmConsultaIncidenciasJefe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaTodasIncidenciasTecnico.resx">
+      <DependentUpon>frmConsultaTodasIncidenciasTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIncidenciaConcluida.resx">
+      <DependentUpon>frmIncidenciaConcluida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateAula.resx">
       <DependentUpon>frmUpdateAula.cs</DependentUpon>

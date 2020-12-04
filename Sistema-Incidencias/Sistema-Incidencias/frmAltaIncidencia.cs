@@ -77,7 +77,7 @@ namespace Sistema_Incidencias
             string Query = "SELECT M.NOMBRE,D.MODELO,D.DESCRIPCION,A.DESCRIPCION FROM DISPOSITIVO D";
             Query += " INNER JOIN MARCA M ON D.MARCA = M.ID";
             Query += " INNER JOIN AULA A ON A.ID = D.AULA";
-            Query += " WHERE NUMERO_SERIE = " + Numero_serie;
+            Query += " WHERE NUMERO_SERIE = '" + Numero_serie +"'";
             SqlDataReader Lector = null;
             Lector = UsoBD.Consulta(Query, Conecta);
             if (Lector == null)
@@ -126,7 +126,7 @@ namespace Sistema_Incidencias
                 return;
 
             string NoSerie = cmbDispositivos.SelectedItem.ToString();
-            string Descripcion = txtDescr.Text.Trim();
+            string Descripcion = txtDescripcion.Text.Trim();
             int R;
 
             string Query = "SPAgregaIncidencia";

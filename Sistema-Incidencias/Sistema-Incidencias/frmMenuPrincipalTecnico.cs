@@ -32,8 +32,25 @@ namespace Sistema_Incidencias
 
         private void altaIncidenciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AltaIncidenciaTecnico altaIncidencia = new AltaIncidenciaTecnico();
-            altaIncidencia.ShowDialog();
+           
+        }
+
+        private void finalizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIncidenciaConcluida finalizaIncidencia = new frmIncidenciaConcluida(Usuario);
+            finalizaIncidencia.ShowDialog();
+        }
+
+        private void asignadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaIncidenciasIndividualTecnico vistaIndividualTec = new frmConsultaIncidenciasIndividualTecnico(Usuario);
+            vistaIndividualTec.ShowDialog();
+        }
+
+        private void finalizadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaTodasIncidenciasTecnico todasincTec = new frmConsultaTodasIncidenciasTecnico(Usuario);
+            todasincTec.ShowDialog();
         }
     }
 }
