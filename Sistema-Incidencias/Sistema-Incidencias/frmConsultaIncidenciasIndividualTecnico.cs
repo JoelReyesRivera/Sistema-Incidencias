@@ -38,7 +38,7 @@ namespace Sistema_Incidencias
                 Conecta.Close();
                 return;
             }
-            string Query = "SELECT ID FROM VW_IncidenciasTecnico WHERE TECNICO='"+Usuario+"' OR ESTATUS='FINALIZADA'" ;
+            string Query = "SELECT ID_INCIDENCIA FROM VW_IncidenciasAsignadas WHERE TECNICO='" + Usuario+"'";
             SqlDataReader Lector = null;
             Lector = UsoBD.Consulta(Query, Conecta);
             if (Lector == null)
@@ -57,19 +57,6 @@ namespace Sistema_Incidencias
             Conecta.Close();
         
     }
-
-        private void rdbFin_CheckedChanged(object sender, EventArgs e)
-        {
-            String Estatus = "FINALIZADA";
-            cmbIncidencias_SelectedIndexChanged(sender, e);
-
-
-
-        }
-
-
-
-
         private void cmbIncidencias_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbIncidencias.SelectedIndex == -1)
@@ -87,7 +74,7 @@ namespace Sistema_Incidencias
                 Conecta.Close();
                 return;
             }
-            string Query = "SELECT * FROM VW_IncidenciasTecnico WHERE ID='" + ID + "'";
+            string Query = "SELECT NUMERO_SERIE,MARCA,MODELO,AULA,FECHA,ESTATUS,DETALLE FROM VW_IncidenciasAsignadas WHERE TECNICO = " + "'"+Usuario+"'"+" AND ID_INCIDENCIA =" + ID;
             SqlDataReader Lector = null;
             Lector = UsoBD.Consulta(Query, Conecta);
             if (Lector == null)
@@ -102,15 +89,13 @@ namespace Sistema_Incidencias
             {
                 while (Lector.Read())
                 {
-                    txtDispositivo.Text = Lector.GetValue(2).ToString();
-                    txtMarca.Text = Lector.GetValue(3).ToString();
-                    txtModelo.Text = Lector.GetValue(4).ToString();
-                    txtUbicado.Text = Lector.GetValue(5).ToString();
+                    txtDispositivo.Text = Lector.GetValue(0).ToString();
+                    txtMarca.Text = Lector.GetValue(1).ToString();
+                    txtModelo.Text = Lector.GetValue(2).ToString();
+                    txtUbicado.Text = Lector.GetValue(3).ToString();
+                    txtFecha.Text = Lector.GetValue(4).ToString();
+                    txtEstatus.Text = Lector.GetValue(5).ToString();
                     txtIncidencia.Text = Lector.GetValue(6).ToString();
-                    txtReporto.Text = Lector.GetValue(7).ToString();
-                    txtFecha.Text = Lector.GetValue(8).ToString();
-                    txtFechaSol.Text= Lector.GetValue(9).ToString();
-                    txtEstatus.Text = Lector.GetValue(10).ToString();
 
                 }
             }

@@ -1,6 +1,6 @@
 ﻿namespace Sistema_Incidencias
 {
-    partial class frmConsultaTodasIncidenciasTecnico
+    partial class frmConsultaIncidenciasTecnico
     {
         /// <summary>
         /// Required designer variable.
@@ -34,11 +34,9 @@
             this.Col_Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_Modelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_Ubicado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Col_DetIncidencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Col_Reportado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_FechaRepor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Col_FechaSol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col_Estatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Col_DetIncidencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTodosIncidentesTec)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,14 +49,13 @@
             this.Col_Marca,
             this.Col_Modelo,
             this.Col_Ubicado,
-            this.Col_DetIncidencia,
-            this.Col_Reportado,
             this.Col_FechaRepor,
-            this.Col_FechaSol,
-            this.Col_Estatus});
-            this.dgvTodosIncidentesTec.Location = new System.Drawing.Point(1, -2);
+            this.Col_Estatus,
+            this.Col_DetIncidencia});
+            this.dgvTodosIncidentesTec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTodosIncidentesTec.Location = new System.Drawing.Point(0, 0);
             this.dgvTodosIncidentesTec.Name = "dgvTodosIncidentesTec";
-            this.dgvTodosIncidentesTec.Size = new System.Drawing.Size(881, 461);
+            this.dgvTodosIncidentesTec.Size = new System.Drawing.Size(942, 483);
             this.dgvTodosIncidentesTec.TabIndex = 0;
             // 
             // Col_ID
@@ -86,38 +83,29 @@
             this.Col_Ubicado.HeaderText = "UBICADO";
             this.Col_Ubicado.Name = "Col_Ubicado";
             // 
-            // Col_DetIncidencia
-            // 
-            this.Col_DetIncidencia.HeaderText = "DETALLE DE INCIDENCIA";
-            this.Col_DetIncidencia.Name = "Col_DetIncidencia";
-            // 
-            // Col_Reportado
-            // 
-            this.Col_Reportado.HeaderText = "REPORTADO POR";
-            this.Col_Reportado.Name = "Col_Reportado";
-            // 
             // Col_FechaRepor
             // 
-            this.Col_FechaRepor.HeaderText = "FECHA DE REPORTE";
+            this.Col_FechaRepor.HeaderText = "FECHA ASIGNADA";
             this.Col_FechaRepor.Name = "Col_FechaRepor";
-            // 
-            // Col_FechaSol
-            // 
-            this.Col_FechaSol.HeaderText = "FECHA DE SOLUCION";
-            this.Col_FechaSol.Name = "Col_FechaSol";
             // 
             // Col_Estatus
             // 
             this.Col_Estatus.HeaderText = "ESTATUS";
             this.Col_Estatus.Name = "Col_Estatus";
             // 
-            // frmConsultaTodasIncidenciasTecnico
+            // Col_DetIncidencia
+            // 
+            this.Col_DetIncidencia.HeaderText = "DETALLE DE INCIDENCIA";
+            this.Col_DetIncidencia.Name = "Col_DetIncidencia";
+            this.Col_DetIncidencia.Width = 200;
+            // 
+            // frmConsultaIncidenciasTecnico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 483);
+            this.ClientSize = new System.Drawing.Size(942, 483);
             this.Controls.Add(this.dgvTodosIncidentesTec);
-            this.Name = "frmConsultaTodasIncidenciasTecnico";
+            this.Name = "frmConsultaIncidenciasTecnico";
             this.Text = "frmConsultaTodasIncidenciasTecnico";
             this.Load += new System.EventHandler(this.frmConsultaTodasIncidenciasTecnico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTodosIncidentesTec)).EndInit();
@@ -133,10 +121,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Col_Marca;
         private System.Windows.Forms.DataGridViewTextBoxColumn Col_Modelo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Col_Ubicado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Col_DetIncidencia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Col_Reportado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Col_FechaRepor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Col_FechaSol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Col_Estatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Col_DetIncidencia;
     }
 }

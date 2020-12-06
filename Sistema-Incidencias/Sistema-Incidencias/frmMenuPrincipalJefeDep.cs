@@ -65,5 +65,11 @@ namespace Sistema_Incidencias
             frmConsultaIncidenciasJefe J = new frmConsultaIncidenciasJefe(Usuario);
             J.ShowDialog();
         }
+
+        private void detalleConcluidasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaIncidenciasConcluidasJefe J = new frmConsultaIncidenciasConcluidasJefe(Usuario);
+            J.ShowDialog();
+        }
     }
 }

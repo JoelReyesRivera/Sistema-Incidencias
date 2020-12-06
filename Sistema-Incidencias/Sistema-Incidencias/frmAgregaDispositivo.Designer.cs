@@ -1,6 +1,6 @@
 ﻿namespace Sistema_Incidencias
 {
-    partial class AgregaDispositivo
+    partial class frmAgregaDispositivo
     {
         /// <summary>
         /// Required designer variable.

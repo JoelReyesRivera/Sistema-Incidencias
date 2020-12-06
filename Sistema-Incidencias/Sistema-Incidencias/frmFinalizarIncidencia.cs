@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Sistema_Incidencias
 {
-    public partial class frmIncidenciaConcluida : Form
+    public partial class frmFinalizarIncidencia : Form
     {
         private String Usuario;
-        public frmIncidenciaConcluida(String Usuario)
+        public frmFinalizarIncidencia(String Usuario)
         {
             InitializeComponent();
             this.Usuario = Usuario;
@@ -24,26 +24,16 @@ namespace Sistema_Incidencias
         {
             List<int> Id = ManejaIncidencia.ObtenerIncidenciaTec(Usuario);
             cmbIncidencias.Items.Clear();
-            txtNombreTec.Text = Usuario;
 
             foreach (var ID in ManejaIncidencia.ObtenerIncidenciaTec(Usuario))
-            {
                 cmbIncidencias.Items.Add(ID);
-            }
-
-           /* foreach (var T in ManejaIncidencia.ObtenerTecnico())
-            {
-                cmbTecnico.Items.Add(T);
-            }
-            */
-
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             int ID = Convert.ToInt32(cmbIncidencias.SelectedItem.ToString());
             string Tecnico = Usuario;
-            DateTime Fecha = Convert.ToDateTime(dateTimeFecha.Value.ToString());
+            DateTime Fecha = DateTime.Now;
             ManejaIncidencia.finalizarIncidenciaTecnico(ID,Fecha, Tecnico);
             this.Close();
         }

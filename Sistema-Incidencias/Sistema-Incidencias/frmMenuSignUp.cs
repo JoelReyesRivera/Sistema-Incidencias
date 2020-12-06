@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_Incidencias
 {
-    public partial class MenuSignUp : Form
+    public partial class frmMenuSignUp : Form
     {
-        public MenuSignUp()
+        public frmMenuSignUp()
         {
             InitializeComponent();
         }

@@ -50,17 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregaDispositivo.cs">
+    <Compile Include="frmAgregaDispositivo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgregaDispositivo.Designer.cs">
-      <DependentUpon>AgregaDispositivo.cs</DependentUpon>
+    <Compile Include="frmAgregaDispositivo.Designer.cs">
+      <DependentUpon>frmAgregaDispositivo.cs</DependentUpon>
     </Compile>
-    <Compile Include="AltaIncidenciaTecnico.cs">
+    <Compile Include="frmAltaIncidenciaTecnico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AltaIncidenciaTecnico.Designer.cs">
-      <DependentUpon>AltaIncidenciaTecnico.cs</DependentUpon>
+    <Compile Include="frmAltaIncidenciaTecnico.Designer.cs">
+      <DependentUpon>frmAltaIncidenciaTecnico.cs</DependentUpon>
     </Compile>
     <Compile Include="Aula.cs" />
     <Compile Include="frmAgragarAula.cs">
@@ -74,6 +74,12 @@
     </Compile>
     <Compile Include="frmAltaIncidencia.Designer.cs">
       <DependentUpon>frmAltaIncidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaIncidenciasConcluidasJefe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaIncidenciasConcluidasJefe.Designer.cs">
+      <DependentUpon>frmConsultaIncidenciasConcluidasJefe.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConsultaIncidenciasIndividual.cs">
       <SubType>Form</SubType>
@@ -105,17 +111,17 @@
     <Compile Include="frmConsultaIncidenciasJefe.Designer.cs">
       <DependentUpon>frmConsultaIncidenciasJefe.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsultaTodasIncidenciasTecnico.cs">
+    <Compile Include="frmConsultaIncidenciasTecnico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsultaTodasIncidenciasTecnico.Designer.cs">
-      <DependentUpon>frmConsultaTodasIncidenciasTecnico.cs</DependentUpon>
+    <Compile Include="frmConsultaIncidenciasTecnico.Designer.cs">
+      <DependentUpon>frmConsultaIncidenciasTecnico.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmIncidenciaConcluida.cs">
+    <Compile Include="frmFinalizarIncidencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmIncidenciaConcluida.Designer.cs">
-      <DependentUpon>frmIncidenciaConcluida.cs</DependentUpon>
+    <Compile Include="frmFinalizarIncidencia.Designer.cs">
+      <DependentUpon>frmFinalizarIncidencia.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUpdateAula.cs">
       <SubType>Form</SubType>
@@ -182,11 +188,11 @@
     <Compile Include="frmLogIn.Designer.cs">
       <DependentUpon>frmLogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuSignUp.cs">
+    <Compile Include="frmMenuSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuSignUp.Designer.cs">
-      <DependentUpon>MenuSignUp.cs</DependentUpon>
+    <Compile Include="frmMenuSignUp.Designer.cs">
+      <DependentUpon>frmMenuSignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenuPrincipalAdmin.cs">
       <SubType>Form</SubType>
@@ -210,17 +216,20 @@
     </Compile>
     <Compile Include="Tecnico.cs" />
     <Compile Include="Utileria.cs" />
-    <EmbeddedResource Include="AgregaDispositivo.resx">
-      <DependentUpon>AgregaDispositivo.cs</DependentUpon>
+    <EmbeddedResource Include="frmAgregaDispositivo.resx">
+      <DependentUpon>frmAgregaDispositivo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AltaIncidenciaTecnico.resx">
-      <DependentUpon>AltaIncidenciaTecnico.cs</DependentUpon>
+    <EmbeddedResource Include="frmAltaIncidenciaTecnico.resx">
+      <DependentUpon>frmAltaIncidenciaTecnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgragarAula.resx">
       <DependentUpon>frmAgragarAula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAltaIncidencia.resx">
       <DependentUpon>frmAltaIncidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaIncidenciasConcluidasJefe.resx">
+      <DependentUpon>frmConsultaIncidenciasConcluidasJefe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaIncidenciasIndividual.resx">
       <DependentUpon>frmConsultaIncidenciasIndividual.cs</DependentUpon>
@@ -237,11 +246,11 @@
     <EmbeddedResource Include="frmConsultaIncidenciasJefe.resx">
       <DependentUpon>frmConsultaIncidenciasJefe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultaTodasIncidenciasTecnico.resx">
-      <DependentUpon>frmConsultaTodasIncidenciasTecnico.cs</DependentUpon>
+    <EmbeddedResource Include="frmConsultaIncidenciasTecnico.resx">
+      <DependentUpon>frmConsultaIncidenciasTecnico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmIncidenciaConcluida.resx">
-      <DependentUpon>frmIncidenciaConcluida.cs</DependentUpon>
+    <EmbeddedResource Include="frmFinalizarIncidencia.resx">
+      <DependentUpon>frmFinalizarIncidencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateAula.resx">
       <DependentUpon>frmUpdateAula.cs</DependentUpon>
@@ -273,8 +282,8 @@
     <EmbeddedResource Include="frmLogIn.resx">
       <DependentUpon>frmLogIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuSignUp.resx">
-      <DependentUpon>MenuSignUp.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenuSignUp.resx">
+      <DependentUpon>frmMenuSignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipalAdmin.resx">
       <DependentUpon>frmMenuPrincipalAdmin.cs</DependentUpon>

@@ -12,9 +12,11 @@ namespace Sistema_Incidencias
 {
     public partial class frmMenuPrincipalAdmin : Form
     {
-        public frmMenuPrincipalAdmin()
+        private string Usuario;
+        public frmMenuPrincipalAdmin(string Usuario)
         {
             InitializeComponent();
+            this.Usuario = Usuario;
         }
 
         private void PantallaIincio_Load(object sender, EventArgs e)
@@ -24,7 +26,7 @@ namespace Sistema_Incidencias
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AgregaDispositivo A = new AgregaDispositivo();
+            frmAgregaDispositivo A = new frmAgregaDispositivo();
             A.ShowDialog();
         }
 
@@ -65,7 +67,7 @@ namespace Sistema_Incidencias
 
         private void asignarTécnicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AltaIncidenciaTecnico altaIncidencia = new AltaIncidenciaTecnico();
+            frmAltaIncidenciaTecnico altaIncidencia = new frmAltaIncidenciaTecnico(Usuario);
             altaIncidencia.ShowDialog();
         }
     }

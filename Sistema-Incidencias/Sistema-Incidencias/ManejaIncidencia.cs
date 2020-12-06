@@ -202,7 +202,9 @@ namespace Sistema_Incidencias
                 }
             }
             SqlDataReader lector = null;
-            String comando = "SELECT  ID FROM INCIDENCIA_TECNICO WHERE TECNICO= '"+ usuario + "'";
+            String comando = "SELECT T.ID_INCIDENCIA FROM INCIDENCIA I ";
+            comando += "INNER JOIN INCIDENCIA_TECNICO T ON I.ID = T.ID_INCIDENCIA ";
+            comando+="WHERE I.ESTATUS = 2 AND T.TECNICO = "+"'"+usuario+"'";
             SqlCommand sqlCommand = new SqlCommand(comando, connection);
             try
             {

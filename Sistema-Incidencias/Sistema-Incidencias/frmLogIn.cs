@@ -27,7 +27,7 @@ namespace Sistema_Incidencias
         }
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            MenuSignUp form = new MenuSignUp();
+            frmMenuSignUp form = new frmMenuSignUp();
             form.ShowDialog();
 
         }
@@ -97,7 +97,7 @@ namespace Sistema_Incidencias
                     menu.ShowDialog();
                     break;
                 case "ADMINISTRADOR":
-                    frmMenuPrincipalAdmin A = new frmMenuPrincipalAdmin();
+                    frmMenuPrincipalAdmin A = new frmMenuPrincipalAdmin(Usuario);
                     A.ShowDialog();
                     break;
             }

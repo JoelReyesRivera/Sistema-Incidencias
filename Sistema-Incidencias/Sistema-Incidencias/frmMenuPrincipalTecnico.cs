@@ -37,7 +37,7 @@ namespace Sistema_Incidencias
 
         private void finalizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmIncidenciaConcluida finalizaIncidencia = new frmIncidenciaConcluida(Usuario);
+            frmFinalizarIncidencia finalizaIncidencia = new frmFinalizarIncidencia(Usuario);
             finalizaIncidencia.ShowDialog();
         }
 
@@ -49,7 +49,7 @@ namespace Sistema_Incidencias
 
         private void finalizadasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmConsultaTodasIncidenciasTecnico todasincTec = new frmConsultaTodasIncidenciasTecnico(Usuario);
+            frmConsultaIncidenciasTecnico todasincTec = new frmConsultaIncidenciasTecnico(Usuario);
             todasincTec.ShowDialog();
         }
     }

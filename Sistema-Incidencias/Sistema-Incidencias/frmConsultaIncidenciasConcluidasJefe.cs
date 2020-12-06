@@ -7,22 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using LibreriaBD;
-
+using System.Data.SqlClient;
 
 namespace Sistema_Incidencias
 {
-    public partial class frmConsultaTodasIncidenciasTecnico : Form
+    public partial class frmConsultaIncidenciasConcluidasJefe : Form
     {
-        private String Usuario;
-        public frmConsultaTodasIncidenciasTecnico(String Usuario)
+        string Usuario;
+        public frmConsultaIncidenciasConcluidasJefe(string Usuario)
         {
-            this.Usuario = Usuario;
             InitializeComponent();
+            this.Usuario = Usuario;
         }
 
-        private void frmConsultaTodasIncidenciasTecnico_Load(object sender, EventArgs e)
+        private void frmConsultaIncidenciasConcluidasJefe_Load(object sender, EventArgs e)
         {
             string Conexion = Utileria.GetConnectionString();
             SqlConnection Conecta = UsoBD.ConectaBD(Conexion);
@@ -34,7 +33,7 @@ namespace Sistema_Incidencias
                 Conecta.Close();
                 return;
             }
-            string Query = "SELECT * FROM VW_IncidenciasTecnico WHERE TECNICO= " + "'" + Usuario + "'";
+            string Query = "SELECT * FROM VW_IncidenciasConcluidas WHERE REPORTADO_POR = "+"'"+Usuario+"'";
             SqlDataReader Lector = null;
             Lector = UsoBD.Consulta(Query, Conecta);
             if (Lector == null)
@@ -47,26 +46,26 @@ namespace Sistema_Incidencias
             }
             if (Lector.HasRows)
             {
-                dgvTodosIncidentesTec.Rows.Clear();
+                dgvIncidencias.Rows.Clear();
                 while (Lector.Read())
                 {
 
-                    string ID = Lector.GetValue(1).ToString();
-                    string Dispositivo = Lector.GetValue(2).ToString();
-                    string Marca = Lector.GetValue(3).ToString();
-                    string Modelo = Lector.GetValue(4).ToString();
-                    string Ubicado = Lector.GetValue(5).ToString();
-                    string Incidencia = Lector.GetValue(6).ToString();
-                    string Reporta = Lector.GetValue(7).ToString();
-                    string Fecha = Lector.GetValue(8).ToString();
-                    string FechaSolucion= Lector.GetValue(9).ToString();
-                    string Estatus = Lector.GetValue(10).ToString();
+                    string ID = Lector.GetValue(0).ToString();
+                    string Dispositivo = Lector.GetValue(1).ToString();
+                    string Marca = Lector.GetValue(2).ToString();
+                    string Modelo = Lector.GetValue(3).ToString();
+                    string Ubicado = Lector.GetValue(4).ToString();
+                    string Incidencia = Lector.GetValue(5).ToString();
+                    string Reporto = Lector.GetValue(6).ToString();
+                    string FechaRep = Lector.GetValue(7).ToString();
+                    string FechaSol= Lector.GetValue(8).ToString();
+                    string Estatus = Lector.GetValue(9).ToString();
+                    string Soluciono = Lector.GetValue(10).ToString();
 
-                    dgvTodosIncidentesTec.Rows.Add(ID, Dispositivo, Marca, Modelo, Ubicado, Incidencia,Reporta, Fecha,FechaSolucion, Estatus);
+                    dgvIncidencias.Rows.Add(ID, Dispositivo, Marca, Modelo, Ubicado, Incidencia, Reporto,FechaRep,FechaSol,Estatus,Soluciono);
                 }
             }
             Conecta.Close();
         }
     }
-    
 }

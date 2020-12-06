@@ -12,9 +12,9 @@ using LibreriaBD;
 
 namespace Sistema_Incidencias
 {
-    public partial class AgregaDispositivo : Form
+    public partial class frmAgregaDispositivo : Form
     {
-        public AgregaDispositivo()
+        public frmAgregaDispositivo()
         {
             InitializeComponent();
             cmbProveedor.SelectedIndex = -1;

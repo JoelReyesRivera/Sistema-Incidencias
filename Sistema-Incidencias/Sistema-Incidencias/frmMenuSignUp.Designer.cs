@@ -1,6 +1,6 @@
 ﻿namespace Sistema_Incidencias
 {
-    partial class MenuSignUp
+    partial class frmMenuSignUp
     {
         /// <summary>
         /// Required designer variable.

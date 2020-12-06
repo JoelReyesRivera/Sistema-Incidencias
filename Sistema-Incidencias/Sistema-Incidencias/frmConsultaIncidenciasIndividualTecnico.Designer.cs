@@ -36,12 +36,10 @@
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.txtUbicado = new System.Windows.Forms.TextBox();
-            this.txtReporto = new System.Windows.Forms.TextBox();
             this.txtDispositivo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,12 +48,7 @@
             this.cmbIncidencias = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.rdbFin = new System.Windows.Forms.RadioButton();
-            this.txtFechaSol = new System.Windows.Forms.TextBox();
-            this.lblFechaSol = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLimpia
@@ -70,21 +63,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.txtFechaSol);
-            this.groupBox1.Controls.Add(this.lblFechaSol);
             this.groupBox1.Controls.Add(this.txtIncidencia);
             this.groupBox1.Controls.Add(this.txtEstatus);
             this.groupBox1.Controls.Add(this.txtFecha);
             this.groupBox1.Controls.Add(this.txtMarca);
             this.groupBox1.Controls.Add(this.txtModelo);
             this.groupBox1.Controls.Add(this.txtUbicado);
-            this.groupBox1.Controls.Add(this.txtReporto);
             this.groupBox1.Controls.Add(this.txtDispositivo);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -99,7 +87,7 @@
             // 
             // txtIncidencia
             // 
-            this.txtIncidencia.Location = new System.Drawing.Point(51, 311);
+            this.txtIncidencia.Location = new System.Drawing.Point(51, 290);
             this.txtIncidencia.Multiline = true;
             this.txtIncidencia.Name = "txtIncidencia";
             this.txtIncidencia.Size = new System.Drawing.Size(312, 51);
@@ -107,14 +95,14 @@
             // 
             // txtEstatus
             // 
-            this.txtEstatus.Location = new System.Drawing.Point(159, 267);
+            this.txtEstatus.Location = new System.Drawing.Point(159, 209);
             this.txtEstatus.Name = "txtEstatus";
             this.txtEstatus.Size = new System.Drawing.Size(204, 22);
             this.txtEstatus.TabIndex = 14;
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(159, 200);
+            this.txtFecha.Location = new System.Drawing.Point(159, 172);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(100, 22);
             this.txtFecha.TabIndex = 13;
@@ -140,13 +128,6 @@
             this.txtUbicado.Size = new System.Drawing.Size(100, 22);
             this.txtUbicado.TabIndex = 10;
             // 
-            // txtReporto
-            // 
-            this.txtReporto.Location = new System.Drawing.Point(159, 168);
-            this.txtReporto.Name = "txtReporto";
-            this.txtReporto.Size = new System.Drawing.Size(100, 22);
-            this.txtReporto.TabIndex = 9;
-            // 
             // txtDispositivo
             // 
             this.txtDispositivo.Location = new System.Drawing.Point(159, 35);
@@ -157,7 +138,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(53, 267);
+            this.label10.Location = new System.Drawing.Point(48, 209);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 16);
             this.label10.TabIndex = 7;
@@ -166,29 +147,20 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(48, 203);
+            this.label9.Location = new System.Drawing.Point(48, 175);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 16);
+            this.label9.Size = new System.Drawing.Size(107, 16);
             this.label9.TabIndex = 6;
-            this.label9.Text = "Fecha";
+            this.label9.Text = "Fecha Asignada";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(48, 292);
+            this.label8.Location = new System.Drawing.Point(48, 271);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(148, 16);
             this.label8.TabIndex = 5;
             this.label8.Text = "Detalle de la incidencia";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(48, 168);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 16);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Reportó";
             // 
             // label6
             // 
@@ -268,49 +240,11 @@
             this.label11.TabIndex = 12;
             this.label11.Text = "CONSULTA INDIVIDUAL DE INCIDENCIAS";
             // 
-            // rdbFin
-            // 
-            this.rdbFin.AutoSize = true;
-            this.rdbFin.Location = new System.Drawing.Point(0, 26);
-            this.rdbFin.Name = "rdbFin";
-            this.rdbFin.Size = new System.Drawing.Size(95, 20);
-            this.rdbFin.TabIndex = 13;
-            this.rdbFin.TabStop = true;
-            this.rdbFin.Text = "Finalizados";
-            this.rdbFin.UseVisualStyleBackColor = true;
-            this.rdbFin.CheckedChanged += new System.EventHandler(this.rdbFin_CheckedChanged);
-            // 
-            // txtFechaSol
-            // 
-            this.txtFechaSol.Location = new System.Drawing.Point(159, 232);
-            this.txtFechaSol.Name = "txtFechaSol";
-            this.txtFechaSol.Size = new System.Drawing.Size(100, 22);
-            this.txtFechaSol.TabIndex = 19;
-            // 
-            // lblFechaSol
-            // 
-            this.lblFechaSol.AutoSize = true;
-            this.lblFechaSol.Location = new System.Drawing.Point(48, 235);
-            this.lblFechaSol.Name = "lblFechaSol";
-            this.lblFechaSol.Size = new System.Drawing.Size(101, 16);
-            this.lblFechaSol.TabIndex = 18;
-            this.lblFechaSol.Text = "Fecha Solución";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rdbFin);
-            this.groupBox2.Location = new System.Drawing.Point(302, 135);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 100);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
             // frmConsultaIncidenciasIndividualTecnico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 498);
+            this.ClientSize = new System.Drawing.Size(506, 528);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnLimpia);
             this.Controls.Add(this.groupBox1);
@@ -322,8 +256,6 @@
             this.Load += new System.EventHandler(this.frmConsultaIncidenciasIndividualTecnico_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,12 +271,10 @@
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.TextBox txtUbicado;
-        private System.Windows.Forms.TextBox txtReporto;
         private System.Windows.Forms.TextBox txtDispositivo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -353,9 +283,5 @@
         private System.Windows.Forms.ComboBox cmbIncidencias;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton rdbFin;
-        private System.Windows.Forms.TextBox txtFechaSol;
-        private System.Windows.Forms.Label lblFechaSol;
-        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
