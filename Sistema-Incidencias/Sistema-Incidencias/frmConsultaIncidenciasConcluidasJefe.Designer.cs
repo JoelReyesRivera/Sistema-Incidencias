@@ -72,34 +72,40 @@
             this.SOLUCIONO});
             this.dgvIncidencias.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvIncidencias.Location = new System.Drawing.Point(0, 0);
+            this.dgvIncidencias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvIncidencias.Name = "dgvIncidencias";
             this.dgvIncidencias.ReadOnly = true;
             this.dgvIncidencias.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dgvIncidencias.Size = new System.Drawing.Size(1399, 665);
+            this.dgvIncidencias.RowHeadersWidth = 51;
+            this.dgvIncidencias.Size = new System.Drawing.Size(1865, 818);
             this.dgvIncidencias.TabIndex = 2;
             // 
             // ID
             // 
             this.ID.FillWeight = 50F;
             this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
             // 
             // DISPOSITIVO
             // 
             this.DISPOSITIVO.HeaderText = "DISPOSITIVO";
+            this.DISPOSITIVO.MinimumWidth = 6;
             this.DISPOSITIVO.Name = "DISPOSITIVO";
             this.DISPOSITIVO.ReadOnly = true;
             // 
             // MARCA
             // 
             this.MARCA.HeaderText = "MARCA";
+            this.MARCA.MinimumWidth = 6;
             this.MARCA.Name = "MARCA";
             this.MARCA.ReadOnly = true;
             // 
             // MODELO
             // 
             this.MODELO.HeaderText = "MODELO";
+            this.MODELO.MinimumWidth = 6;
             this.MODELO.Name = "MODELO";
             this.MODELO.ReadOnly = true;
             // 
@@ -107,53 +113,61 @@
             // 
             this.UBICADO.FillWeight = 50F;
             this.UBICADO.HeaderText = "UBICADO";
+            this.UBICADO.MinimumWidth = 6;
             this.UBICADO.Name = "UBICADO";
             this.UBICADO.ReadOnly = true;
             // 
             // INCIDENCIA
             // 
             this.INCIDENCIA.HeaderText = "INCIDENCIA";
+            this.INCIDENCIA.MinimumWidth = 6;
             this.INCIDENCIA.Name = "INCIDENCIA";
             this.INCIDENCIA.ReadOnly = true;
             // 
             // REPORTO
             // 
             this.REPORTO.HeaderText = "REPORTO";
+            this.REPORTO.MinimumWidth = 6;
             this.REPORTO.Name = "REPORTO";
             this.REPORTO.ReadOnly = true;
             // 
             // FECHA
             // 
             this.FECHA.HeaderText = "RECHA REPORTE";
+            this.FECHA.MinimumWidth = 6;
             this.FECHA.Name = "FECHA";
             this.FECHA.ReadOnly = true;
             // 
             // FECHASOL
             // 
             this.FECHASOL.HeaderText = "FECHA SOLUCION";
+            this.FECHASOL.MinimumWidth = 6;
             this.FECHASOL.Name = "FECHASOL";
             this.FECHASOL.ReadOnly = true;
             // 
             // ESTATUS
             // 
             this.ESTATUS.HeaderText = "ESTATUS";
+            this.ESTATUS.MinimumWidth = 6;
             this.ESTATUS.Name = "ESTATUS";
             this.ESTATUS.ReadOnly = true;
             // 
             // SOLUCIONO
             // 
             this.SOLUCIONO.HeaderText = "SOLUCIONO";
+            this.SOLUCIONO.MinimumWidth = 6;
             this.SOLUCIONO.Name = "SOLUCIONO";
             this.SOLUCIONO.ReadOnly = true;
             // 
             // frmConsultaIncidenciasConcluidasJefe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1399, 665);
+            this.ClientSize = new System.Drawing.Size(1865, 818);
             this.Controls.Add(this.dgvIncidencias);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmConsultaIncidenciasConcluidasJefe";
-            this.Text = "frmConsultaIncidenciasConcluidasJefe";
+            this.Text = "Incidencias concluidas";
             this.Load += new System.EventHandler(this.frmConsultaIncidenciasConcluidasJefe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvIncidencias)).EndInit();
             this.ResumeLayout(false);

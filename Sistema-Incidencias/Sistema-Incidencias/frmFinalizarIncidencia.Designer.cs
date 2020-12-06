@@ -38,27 +38,30 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(61, 47);
+            this.label1.Location = new System.Drawing.Point(56, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 24);
+            this.label1.Size = new System.Drawing.Size(161, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ID:";
+            this.label1.Text = "Id incidencia";
             // 
             // label2
             // 
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(133, 28);
             this.label2.TabIndex = 4;
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(261, 148);
+            this.btnGuardar.Location = new System.Drawing.Point(83, 131);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(84, 32);
+            this.btnGuardar.Size = new System.Drawing.Size(112, 39);
             this.btnGuardar.TabIndex = 15;
-            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Text = "Finalizar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -68,22 +71,24 @@
             this.cmbIncidencias.FormattingEnabled = true;
             this.cmbIncidencias.Items.AddRange(new object[] {
             "SELECCIONE"});
-            this.cmbIncidencias.Location = new System.Drawing.Point(32, 82);
+            this.cmbIncidencias.Location = new System.Drawing.Point(48, 78);
+            this.cmbIncidencias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbIncidencias.Name = "cmbIncidencias";
-            this.cmbIncidencias.Size = new System.Drawing.Size(121, 21);
+            this.cmbIncidencias.Size = new System.Drawing.Size(182, 24);
             this.cmbIncidencias.TabIndex = 16;
             // 
-            // frmIncidenciaConcluida
+            // frmFinalizarIncidencia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 267);
+            this.ClientSize = new System.Drawing.Size(266, 229);
             this.Controls.Add(this.cmbIncidencias);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "frmIncidenciaConcluida";
-            this.Text = "frmIncidenciaConcluida";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmFinalizarIncidencia";
+            this.Text = "Finalizar Incidencia";
             this.Load += new System.EventHandler(this.frmIncidenciaConcluida_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

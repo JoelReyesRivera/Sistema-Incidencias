@@ -39,42 +39,47 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 52);
+            this.label1.Location = new System.Drawing.Point(101, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 31);
+            this.label1.Size = new System.Drawing.Size(133, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(46, 86);
+            this.txtUsuario.Location = new System.Drawing.Point(62, 81);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(180, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(239, 22);
             this.txtUsuario.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 136);
+            this.label2.Location = new System.Drawing.Point(17, 142);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(247, 31);
+            this.label2.Size = new System.Drawing.Size(303, 40);
             this.label2.TabIndex = 2;
             this.label2.Text = "Departamento Jefe";
             // 
             // cmbDepartamento
             // 
             this.cmbDepartamento.FormattingEnabled = true;
-            this.cmbDepartamento.Location = new System.Drawing.Point(46, 182);
+            this.cmbDepartamento.Location = new System.Drawing.Point(62, 199);
+            this.cmbDepartamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbDepartamento.Name = "cmbDepartamento";
-            this.cmbDepartamento.Size = new System.Drawing.Size(180, 21);
+            this.cmbDepartamento.Size = new System.Drawing.Size(239, 24);
             this.cmbDepartamento.TabIndex = 3;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(81, 224);
+            this.btnGuardar.Location = new System.Drawing.Point(109, 251);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(102, 25);
+            this.btnGuardar.Size = new System.Drawing.Size(136, 31);
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -82,16 +87,17 @@
             // 
             // frmUpdateJefe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(379, 321);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cmbDepartamento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmUpdateJefe";
-            this.Text = "frmUpdateJefe";
+            this.Text = "Actualizar Jefe";
             this.Load += new System.EventHandler(this.frmUpdateJefe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
