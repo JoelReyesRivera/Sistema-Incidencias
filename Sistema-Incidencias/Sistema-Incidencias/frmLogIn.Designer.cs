@@ -35,15 +35,13 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.cmbTipoUsuario = new System.Windows.Forms.ComboBox();
-            this.lblTipoUsuario = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblLogIn
             // 
             this.lblLogIn.AutoSize = true;
             this.lblLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogIn.Location = new System.Drawing.Point(115, 20);
+            this.lblLogIn.Location = new System.Drawing.Point(131, 23);
             this.lblLogIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLogIn.Name = "lblLogIn";
             this.lblLogIn.Size = new System.Drawing.Size(106, 37);
@@ -54,7 +52,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(116, 85);
+            this.lblUsuario.Location = new System.Drawing.Point(125, 90);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(96, 29);
@@ -65,7 +63,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(102, 168);
+            this.lblPassword.Location = new System.Drawing.Point(117, 198);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(120, 29);
@@ -86,7 +84,7 @@
             // 
             this.txtPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(81, 200);
+            this.txtPassword.Location = new System.Drawing.Point(81, 238);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -117,40 +115,11 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // cmbTipoUsuario
-            // 
-            this.cmbTipoUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipoUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTipoUsuario.FormattingEnabled = true;
-            this.cmbTipoUsuario.Items.AddRange(new object[] {
-            "SELECCIONE",
-            "ADMINISTRADOR",
-            "JEFE DEPARTAMENTO",
-            "TECNICO"});
-            this.cmbTipoUsuario.Location = new System.Drawing.Point(81, 287);
-            this.cmbTipoUsuario.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbTipoUsuario.Name = "cmbTipoUsuario";
-            this.cmbTipoUsuario.Size = new System.Drawing.Size(186, 25);
-            this.cmbTipoUsuario.TabIndex = 7;
-            // 
-            // lblTipoUsuario
-            // 
-            this.lblTipoUsuario.AutoSize = true;
-            this.lblTipoUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoUsuario.Location = new System.Drawing.Point(98, 243);
-            this.lblTipoUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTipoUsuario.Name = "lblTipoUsuario";
-            this.lblTipoUsuario.Size = new System.Drawing.Size(152, 29);
-            this.lblTipoUsuario.TabIndex = 8;
-            this.lblTipoUsuario.Text = "Tipo Usuario";
-            // 
             // FormMenuLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(348, 382);
-            this.Controls.Add(this.lblTipoUsuario);
-            this.Controls.Add(this.cmbTipoUsuario);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.txtPassword);
@@ -176,8 +145,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.ComboBox cmbTipoUsuario;
-        private System.Windows.Forms.Label lblTipoUsuario;
     }
 }
 

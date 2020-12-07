@@ -80,14 +80,14 @@
             // asignadasToolStripMenuItem
             // 
             this.asignadasToolStripMenuItem.Name = "asignadasToolStripMenuItem";
-            this.asignadasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.asignadasToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.asignadasToolStripMenuItem.Text = "Individuales";
             this.asignadasToolStripMenuItem.Click += new System.EventHandler(this.asignadasToolStripMenuItem_Click);
             // 
             // finalizadasToolStripMenuItem
             // 
             this.finalizadasToolStripMenuItem.Name = "finalizadasToolStripMenuItem";
-            this.finalizadasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.finalizadasToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.finalizadasToolStripMenuItem.Text = "Todas";
             this.finalizadasToolStripMenuItem.Click += new System.EventHandler(this.finalizadasToolStripMenuItem_Click);
             // 
@@ -116,7 +116,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMenuPrincipalTecnico";
-            this.Text = "Menu Principal";
+            this.Text = "Menu Técnico";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -15,15 +15,16 @@ namespace Sistema_Incidencias
     public partial class FormMenuLogIn : Form
     {
         public ManejaUsuario usuarios;
+        private String[] TipoUsuario = { "ADMINISTRADOR", "TECNICO", "JEFE_DEPARTAMENTO"};
         public FormMenuLogIn()
         {
-            usuarios = new ManejaUsuario();
             InitializeComponent();
+            usuarios = new ManejaUsuario();
         }
 
         private void FormMenuLogIn_Load(object sender, EventArgs e)
         {
-            cmbTipoUsuario.SelectedIndex = 0;
+
         }
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -31,7 +32,6 @@ namespace Sistema_Incidencias
             form.ShowDialog();
 
         }
-
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             if (!ValidaDatos())
@@ -39,49 +39,56 @@ namespace Sistema_Incidencias
 
             String Usuario = txtUsuario.Text.Trim();
             String Password = txtPassword.Text.Trim();
-            String TipoUsuario = cmbTipoUsuario.SelectedItem.ToString().Trim();
+            String TipoUsuario = "";
+            bool Existe = false;
 
-            if (TipoUsuario == "JEFE DEPARTAMENTO")
-                TipoUsuario = "JEFE_DEPARTAMENTO";
+            for (int i = 0; i < 3; i++)
+            {
+                TipoUsuario = this.TipoUsuario[i].ToString();
 
-            string Conexion = Utileria.GetConnectionString();
-            SqlConnection Conecta = UsoBD.ConectaBD(Conexion);
-            if (Conecta == null)
-            {
-                MessageBox.Show("NO SE PUDO CONECTAR A LA BASE DE DATOS", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                foreach (SqlError Error in UsoBD.ESalida.Errors)
-                    MessageBox.Show(Error.Message);
-                Conecta.Close();
-                return;
-            }
-            string Query = "SELECT COUNT(USUARIO) FROM " + TipoUsuario + " WHERE USUARIO =" + "'" + Usuario + "'" + " AND PASSWORD = " + "'" +Password+ "'";
-            SqlDataReader Lector = null;
-            Lector = UsoBD.Consulta(Query, Conecta);
-            if (Lector == null)
-            {
-                MessageBox.Show("ERROR AL REALIZAR LA CONSULTA");
-                foreach (SqlError Error in UsoBD.ESalida.Errors)
-                    MessageBox.Show(Error.Message);
-                Conecta.Close();
-                return;
-            }
-            if (Lector.HasRows)
-            {
-                int R;
-                while (Lector.Read())
+                string Conexion = Utileria.GetConnectionString();
+                SqlConnection Conecta = UsoBD.ConectaBD(Conexion);
+                if (Conecta == null)
                 {
-                    R = int.Parse(Lector.GetValue(0).ToString());
-                    if (R == 0)
-                    {
-                        MessageBox.Show("LAS CREDENCIALES NO COINCIDEN CON NINGÚN USUARIO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        Conecta.Close();
-                        return;
-                    }
-                    MessageBox.Show("SESIÓN INICIADA CORRECTAMENTE","ÉXITO",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("NO SE PUDO CONECTAR A LA BASE DE DATOS", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    foreach (SqlError Error in UsoBD.ESalida.Errors)
+                        MessageBox.Show(Error.Message);
                     Conecta.Close();
-                    break;
+                    return;
                 }
+                string Query = "SELECT COUNT(USUARIO) FROM " + TipoUsuario + " WHERE USUARIO =" + "'" + Usuario + "'" + " AND PASSWORD = " + "'" + Password + "'";
+                SqlDataReader Lector = null;
+                Lector = UsoBD.Consulta(Query, Conecta);
+                if (Lector == null)
+                {
+                    MessageBox.Show("ERROR AL REALIZAR LA CONSULTA");
+                    foreach (SqlError Error in UsoBD.ESalida.Errors)
+                        MessageBox.Show(Error.Message);
+                    Conecta.Close();
+                    return;
+                }
+                if (Lector.HasRows)
+                {
+                    int R;
+                    while (Lector.Read())
+                    {
+                        R = int.Parse(Lector.GetValue(0).ToString());
+                        if (R>0){
+                            Existe = true;
+                            break;
+                        }
+                    }
+                    if (Existe)
+                        break;
+                }
+                
             }
+            if (!Existe)
+            {
+                MessageBox.Show("LAS CREDENCIALES NO COINCIDEN CON NINGÚN USUARIO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            MessageBox.Show("SESIÓN INICIADA CORRECTAMENTE", "LOGIN CORRECTO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             NextPantalla(TipoUsuario, Usuario);
         }
         private void NextPantalla(string TipoUsuario, String Usuario)
@@ -117,18 +124,6 @@ namespace Sistema_Incidencias
                 MessageBox.Show("NO HA PROPORCIONADO UNA CONTRASEÑA", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            if (cmbTipoUsuario.SelectedIndex == 0)
-            {
-                MessageBox.Show("NO HA SELECCIONADO EL TIPO DE USUARIO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-            String TipoUsuario = cmbTipoUsuario.SelectedItem.ToString().Trim();
-            if (String.IsNullOrEmpty(TipoUsuario))
-            {
-                MessageBox.Show("TIPO DE USUARIO NO VÁLIDO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-
             return true;
         }
     }
