@@ -164,6 +164,11 @@ namespace Sistema_Incidencias
             string Marca = cmbMarca.SelectedItem.ToString();
             string Aula = cmbAula.SelectedItem.ToString();
             int R;
+            int Almacen = 0;
+            if (chkAgregarAlmacen.Checked)
+            {
+                Almacen = 1;
+            }
 
             string Query = "SPAgregaDispositivo";
             SqlCommand cmd = new SqlCommand(Query, Conecta);
@@ -175,6 +180,8 @@ namespace Sistema_Incidencias
             cmd.Parameters.AddWithValue("@DESCRIPCION", Descripcion);
             cmd.Parameters.AddWithValue("@MARCA", Marca);
             cmd.Parameters.AddWithValue("@AULA", Aula);
+            cmd.Parameters.AddWithValue("@ALMACEN", Almacen);
+
 
             SqlParameter returnParameter = cmd.Parameters.Add("Res", SqlDbType.Int);
             returnParameter.Direction = ParameterDirection.ReturnValue;

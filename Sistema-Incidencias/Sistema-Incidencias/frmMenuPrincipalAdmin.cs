@@ -70,5 +70,11 @@ namespace Sistema_Incidencias
             frmAltaIncidenciaTecnico altaIncidencia = new frmAltaIncidenciaTecnico(Usuario);
             altaIncidencia.ShowDialog();
         }
+
+        private void verDispositivosAlmacenadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaDispositivosAlmacen frmConsultaDispositivosAlmacen = new frmConsultaDispositivosAlmacen();
+            frmConsultaDispositivosAlmacen.ShowDialog();
+        }
     }
 }
