@@ -52,5 +52,11 @@ namespace Sistema_Incidencias
             frmConsultaIncidenciasTecnico todasincTec = new frmConsultaIncidenciasTecnico(Usuario);
             todasincTec.ShowDialog();
         }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAgregaDispositivo A = new frmAgregaDispositivo();
+            A.ShowDialog();
+        }
     }
 }

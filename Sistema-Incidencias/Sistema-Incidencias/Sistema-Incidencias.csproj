@@ -75,12 +75,6 @@
     <Compile Include="frmAltaIncidencia.Designer.cs">
       <DependentUpon>frmAltaIncidencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsultaDispositivosAlmacen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmConsultaDispositivosAlmacen.Designer.cs">
-      <DependentUpon>frmConsultaDispositivosAlmacen.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmConsultaIncidenciasConcluidasJefe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +171,12 @@
     <Compile Include="frmUpdateTecnico.Designer.cs">
       <DependentUpon>frmUpdateTecnico.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVinculaDispositivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVinculaDispositivos.Designer.cs">
+      <DependentUpon>frmVinculaDispositivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jefe.cs" />
     <Compile Include="ManejaAulas.cs" />
     <Compile Include="ManejaIncidencia.cs" />
@@ -234,9 +234,6 @@
     <EmbeddedResource Include="frmAltaIncidencia.resx">
       <DependentUpon>frmAltaIncidencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultaDispositivosAlmacen.resx">
-      <DependentUpon>frmConsultaDispositivosAlmacen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaIncidenciasConcluidasJefe.resx">
       <DependentUpon>frmConsultaIncidenciasConcluidasJefe.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateTecnico.resx">
       <DependentUpon>frmUpdateTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVinculaDispositivos.resx">
+      <DependentUpon>frmVinculaDispositivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpTecnicoDepartamento.resx">
       <DependentUpon>SignUpTecnicoDepartamento.cs</DependentUpon>

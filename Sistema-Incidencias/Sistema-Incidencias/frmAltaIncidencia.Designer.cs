@@ -141,9 +141,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(271, 225);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.Size = new System.Drawing.Size(56, 13);
             this.label6.TabIndex = 19;
-            this.label6.Text = "Descripción";
+            this.label6.Text = "Incidencia";
             // 
             // txtDescripcion
             // 

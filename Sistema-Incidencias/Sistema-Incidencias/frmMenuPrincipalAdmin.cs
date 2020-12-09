@@ -71,10 +71,10 @@ namespace Sistema_Incidencias
             altaIncidencia.ShowDialog();
         }
 
-        private void verDispositivosAlmacenadosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void vincularToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmConsultaDispositivosAlmacen frmConsultaDispositivosAlmacen = new frmConsultaDispositivosAlmacen();
-            frmConsultaDispositivosAlmacen.ShowDialog();
+            frmVinculaDispositivos V = new frmVinculaDispositivos();
+            V.ShowDialog();
         }
     }
 }
