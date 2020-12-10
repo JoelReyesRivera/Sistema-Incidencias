@@ -58,5 +58,11 @@ namespace Sistema_Incidencias
             frmAgregaDispositivo A = new frmAgregaDispositivo();
             A.ShowDialog();
         }
+
+        private void concluidasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultarConlcuidasTecnico frm = new frmConsultarConlcuidasTecnico(Usuario);
+            frm.ShowDialog();
+        }
     }
 }

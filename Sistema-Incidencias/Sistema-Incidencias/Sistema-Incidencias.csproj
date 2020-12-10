@@ -75,6 +75,12 @@
     <Compile Include="frmAltaIncidencia.Designer.cs">
       <DependentUpon>frmAltaIncidencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaDispositivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaDispositivos.Designer.cs">
+      <DependentUpon>frmConsultaDispositivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaIncidenciasConcluidasJefe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,24 @@
     </Compile>
     <Compile Include="frmConsultaIncidenciasTecnico.Designer.cs">
       <DependentUpon>frmConsultaIncidenciasTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarConlcuidasTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarConlcuidasTecnico.Designer.cs">
+      <DependentUpon>frmConsultarConlcuidasTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultasConcluidasAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultasConcluidasAdmin.Designer.cs">
+      <DependentUpon>frmConsultasConcluidasAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDispositivosEnAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDispositivosEnAlmacen.Designer.cs">
+      <DependentUpon>frmDispositivosEnAlmacen.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFinalizarIncidencia.cs">
       <SubType>Form</SubType>
@@ -234,6 +258,9 @@
     <EmbeddedResource Include="frmAltaIncidencia.resx">
       <DependentUpon>frmAltaIncidencia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaDispositivos.resx">
+      <DependentUpon>frmConsultaDispositivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaIncidenciasConcluidasJefe.resx">
       <DependentUpon>frmConsultaIncidenciasConcluidasJefe.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +281,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaIncidenciasTecnico.resx">
       <DependentUpon>frmConsultaIncidenciasTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarConlcuidasTecnico.resx">
+      <DependentUpon>frmConsultarConlcuidasTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultasConcluidasAdmin.resx">
+      <DependentUpon>frmConsultasConcluidasAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDispositivosEnAlmacen.resx">
+      <DependentUpon>frmDispositivosEnAlmacen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFinalizarIncidencia.resx">
       <DependentUpon>frmFinalizarIncidencia.cs</DependentUpon>

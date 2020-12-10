@@ -76,5 +76,28 @@ namespace Sistema_Incidencias
             frmVinculaDispositivos V = new frmVinculaDispositivos();
             V.ShowDialog();
         }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void enUsoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaDispositivos frmConsultaDispositivos = new frmConsultaDispositivos();
+            frmConsultaDispositivos.ShowDialog();
+        }
+
+        private void dispostivosEnAlmacénToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDispositivosEnAlmacen frmDispositivosEnAlmacen = new frmDispositivosEnAlmacen();
+            frmDispositivosEnAlmacen.ShowDialog();
+        }
+
+        private void incidenciasConcluidasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultasConcluidasAdmin frm = new frmConsultasConcluidasAdmin();
+            frm.ShowDialog();
+        }
     }
 }

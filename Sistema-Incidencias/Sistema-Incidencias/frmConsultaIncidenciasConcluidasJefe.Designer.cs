@@ -41,6 +41,7 @@
             this.FECHASOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ESTATUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SOLUCIONO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TIPOSOLUCION = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIncidencias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,15 +70,16 @@
             this.FECHA,
             this.FECHASOL,
             this.ESTATUS,
-            this.SOLUCIONO});
+            this.SOLUCIONO,
+            this.TIPOSOLUCION});
             this.dgvIncidencias.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvIncidencias.Location = new System.Drawing.Point(0, 0);
-            this.dgvIncidencias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvIncidencias.Margin = new System.Windows.Forms.Padding(4);
             this.dgvIncidencias.Name = "dgvIncidencias";
             this.dgvIncidencias.ReadOnly = true;
             this.dgvIncidencias.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvIncidencias.RowHeadersWidth = 51;
-            this.dgvIncidencias.Size = new System.Drawing.Size(1865, 818);
+            this.dgvIncidencias.Size = new System.Drawing.Size(1916, 818);
             this.dgvIncidencias.TabIndex = 2;
             // 
             // ID
@@ -159,13 +161,20 @@
             this.SOLUCIONO.Name = "SOLUCIONO";
             this.SOLUCIONO.ReadOnly = true;
             // 
+            // TIPOSOLUCION
+            // 
+            this.TIPOSOLUCION.HeaderText = "TIPO SOLUCION";
+            this.TIPOSOLUCION.MinimumWidth = 6;
+            this.TIPOSOLUCION.Name = "TIPOSOLUCION";
+            this.TIPOSOLUCION.ReadOnly = true;
+            // 
             // frmConsultaIncidenciasConcluidasJefe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1865, 818);
+            this.ClientSize = new System.Drawing.Size(1916, 818);
             this.Controls.Add(this.dgvIncidencias);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmConsultaIncidenciasConcluidasJefe";
             this.Text = "Incidencias concluidas";
             this.Load += new System.EventHandler(this.frmConsultaIncidenciasConcluidasJefe_Load);
@@ -188,5 +197,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FECHASOL;
         private System.Windows.Forms.DataGridViewTextBoxColumn ESTATUS;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOLUCIONO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TIPOSOLUCION;
     }
 }

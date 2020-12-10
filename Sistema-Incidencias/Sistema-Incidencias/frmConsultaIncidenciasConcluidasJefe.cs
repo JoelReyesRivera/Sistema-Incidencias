@@ -58,11 +58,12 @@ namespace Sistema_Incidencias
                     string Incidencia = Lector.GetValue(5).ToString();
                     string Reporto = Lector.GetValue(6).ToString();
                     string FechaRep = Lector.GetValue(7).ToString();
-                    string FechaSol= Lector.GetValue(8).ToString();
+                    string FechaSol= Lector.GetValue(8).ToString();     
                     string Estatus = Lector.GetValue(9).ToString();
                     string Soluciono = Lector.GetValue(10).ToString();
+                    string tipoSolucion = Lector.GetValue(11).ToString();
 
-                    dgvIncidencias.Rows.Add(ID, Dispositivo, Marca, Modelo, Ubicado, Incidencia, Reporto,FechaRep,FechaSol,Estatus,Soluciono);
+                    dgvIncidencias.Rows.Add(ID, Dispositivo, Marca, Modelo, Ubicado, Incidencia, Reporto,FechaRep,FechaSol,Estatus,Soluciono, tipoSolucion);
                 }
             }
             Conecta.Close();

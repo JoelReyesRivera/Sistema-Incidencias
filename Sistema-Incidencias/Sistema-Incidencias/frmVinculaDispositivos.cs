@@ -21,6 +21,8 @@ namespace Sistema_Incidencias
 
         private void frmVinculaDispositivos_Load(object sender, EventArgs e)
         {
+            cmbDispositivo1.Items.Clear();
+            cmbDispositivo2.Items.Clear();
             string Conexion = Utileria.GetConnectionString();
             SqlConnection Conecta = UsoBD.ConectaBD(Conexion);
             if (Conecta == null)
@@ -133,7 +135,7 @@ namespace Sistema_Incidencias
                 while (Lector.Read())
                 {
                     txtDescripcion.Text=(Lector.GetValue(0).ToString());
-                    txtModelo.Text=(Lector.GetValue(0).ToString());
+                    txtModelo.Text=(Lector.GetValue(1).ToString());
                 }
             }
             Conecta.Close();
@@ -168,7 +170,7 @@ namespace Sistema_Incidencias
                 while (Lector.Read())
                 {
                     txtDescripcion2.Text = (Lector.GetValue(0).ToString());
-                    txtModelo2.Text = (Lector.GetValue(0).ToString());
+                    txtModelo2.Text = (Lector.GetValue(1).ToString());
                 }
             }
             Conecta.Close();
