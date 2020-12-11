@@ -21,7 +21,7 @@ namespace Sistema_Incidencias
 
         private void PantallaIincio_Load(object sender, EventArgs e)
         {
-
+            lblUsuario.Text = Usuario;
         }
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -98,6 +98,42 @@ namespace Sistema_Incidencias
         {
             frmConsultasConcluidasAdmin frm = new frmConsultasConcluidasAdmin();
             frm.ShowDialog();
+        }
+
+        private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMenuSignUp F = new frmMenuSignUp();
+            F.ShowDialog();
+        }
+
+        private void historialAsignadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCosultaIncidenciasAsignadas A = new frmCosultaIncidenciasAsignadas();
+            A.ShowDialog();
+        }
+
+        private void historialEnIncidenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaDispositivoIncidencia I = new frmConsultaDispositivoIncidencia();
+            I.ShowDialog();
+        }
+
+        private void historialPorTécnicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaDispositivoIncidenciaTecnico T = new frmConsultaDispositivoIncidenciaTecnico();
+            T.ShowDialog();
+        }
+
+        private void cambiosDeDispositivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaDispositivoCambios D = new frmConsultaDispositivoCambios();
+            D.ShowDialog();
+        }
+
+        private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConsultaAulasAdmin A = new frmConsultaAulasAdmin();
+            A.ShowDialog();
         }
     }
 }

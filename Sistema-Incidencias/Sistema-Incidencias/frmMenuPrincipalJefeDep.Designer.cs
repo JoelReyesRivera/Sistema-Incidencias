@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPrincipalJefeDep));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.incidenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.individualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.todasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.detalleConcluidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aulasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarAulaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verAulasAsignadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.detalleConcluidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -53,7 +56,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(470, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(586, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,7 +72,7 @@
             // altaToolStripMenuItem
             // 
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
             // 
@@ -80,23 +83,30 @@
             this.todasToolStripMenuItem,
             this.detalleConcluidasToolStripMenuItem});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.consultasToolStripMenuItem.Text = "Consulta";
             this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
             // individualToolStripMenuItem
             // 
             this.individualToolStripMenuItem.Name = "individualToolStripMenuItem";
-            this.individualToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.individualToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.individualToolStripMenuItem.Text = "Individual";
             this.individualToolStripMenuItem.Click += new System.EventHandler(this.individualToolStripMenuItem_Click);
             // 
             // todasToolStripMenuItem
             // 
             this.todasToolStripMenuItem.Name = "todasToolStripMenuItem";
-            this.todasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.todasToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.todasToolStripMenuItem.Text = "Todas";
             this.todasToolStripMenuItem.Click += new System.EventHandler(this.todasToolStripMenuItem_Click);
+            // 
+            // detalleConcluidasToolStripMenuItem
+            // 
+            this.detalleConcluidasToolStripMenuItem.Name = "detalleConcluidasToolStripMenuItem";
+            this.detalleConcluidasToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.detalleConcluidasToolStripMenuItem.Text = "Detalle Concluidas";
+            this.detalleConcluidasToolStripMenuItem.Click += new System.EventHandler(this.detalleConcluidasToolStripMenuItem_Click);
             // 
             // perfilToolStripMenuItem
             // 
@@ -116,38 +126,44 @@
             // aulasToolStripMenuItem
             // 
             this.aulasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarAulaToolStripMenuItem,
             this.verAulasAsignadasToolStripMenuItem});
             this.aulasToolStripMenuItem.Name = "aulasToolStripMenuItem";
             this.aulasToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.aulasToolStripMenuItem.Text = "Aulas";
             // 
-            // agregarAulaToolStripMenuItem
-            // 
-            this.agregarAulaToolStripMenuItem.Name = "agregarAulaToolStripMenuItem";
-            this.agregarAulaToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.agregarAulaToolStripMenuItem.Text = "Agregar Aula";
-            this.agregarAulaToolStripMenuItem.Click += new System.EventHandler(this.agregarAulaToolStripMenuItem_Click);
-            // 
             // verAulasAsignadasToolStripMenuItem
             // 
             this.verAulasAsignadasToolStripMenuItem.Name = "verAulasAsignadasToolStripMenuItem";
-            this.verAulasAsignadasToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.verAulasAsignadasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verAulasAsignadasToolStripMenuItem.Text = "Ver Aulas Asignadas";
             this.verAulasAsignadasToolStripMenuItem.Click += new System.EventHandler(this.verAulasAsignadasToolStripMenuItem_Click);
             // 
-            // detalleConcluidasToolStripMenuItem
+            // lblUsuario
             // 
-            this.detalleConcluidasToolStripMenuItem.Name = "detalleConcluidasToolStripMenuItem";
-            this.detalleConcluidasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.detalleConcluidasToolStripMenuItem.Text = "Detalle Concluidas";
-            this.detalleConcluidasToolStripMenuItem.Click += new System.EventHandler(this.detalleConcluidasToolStripMenuItem_Click);
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(503, 107);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(0, 13);
+            this.lblUsuario.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(489, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(97, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // frmMenuPrincipalJefeDep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 355);
+            this.ClientSize = new System.Drawing.Size(586, 463);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenuPrincipalJefeDep";
@@ -155,6 +171,7 @@
             this.Load += new System.EventHandler(this.frmMenuPrincipalJefeDep_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,7 +183,6 @@
         private System.Windows.Forms.ToolStripMenuItem perfilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarDepartamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aulasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarAulaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verAulasAsignadasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem incidenciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem;
@@ -174,5 +190,7 @@
         private System.Windows.Forms.ToolStripMenuItem individualToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem todasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem detalleConcluidasToolStripMenuItem;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

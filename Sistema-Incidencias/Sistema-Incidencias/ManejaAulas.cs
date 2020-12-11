@@ -83,6 +83,41 @@ namespace Sistema_Incidencias
             connection.Close();
             return list;
         }
+        public List<Aula> ObtenerAulasAdmin()
+        {
+            List<Aula> list = new List<Aula>();
+            SqlConnection connection = UsoBD.ConectaBD(Utileria.GetConnectionString());
+            if (connection == null)
+            {
+                foreach (SqlError item in UsoBD.ESalida.Errors)
+                {
+                    connection.Close();
+                    MessageBox.Show(item.Message);
+                }
+            }
+            SqlDataReader lector = null;
+            String comando = "SELECT * FROM AULA";
+            SqlCommand sqlCommand = new SqlCommand(comando, connection);
+            try
+            {
+                lector = sqlCommand.ExecuteReader();
+            }
+            catch (SqlException ex)
+            {
+                foreach (SqlError item in ex.Errors)
+                {
+                    MessageBox.Show(item.Message.ToString());
+                }
+                connection.Close();
+                return list;
+            }
+            while (lector.Read())
+            {
+                list.Add(new Aula(lector.GetValue(0).ToString(), lector.GetValue(1).ToString(), lector.GetValue(2).ToString()));
+            }
+            connection.Close();
+            return list;
+        }
 
         public static string ObtenerDescripcionAula()
         {

@@ -18,9 +18,9 @@ namespace Sistema_Incidencias
 
         public frmAgregarAulas(String usuario)
         {
+            InitializeComponent();
             Usuario = usuario;
             manejadoraAulas = new ManejaAulas();
-            InitializeComponent();
         }
 
         private void frmAgregarAulas_Load(object sender, EventArgs e)

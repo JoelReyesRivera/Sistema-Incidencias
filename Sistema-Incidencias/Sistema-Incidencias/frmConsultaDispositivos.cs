@@ -31,7 +31,7 @@ namespace Sistema_Incidencias
                 Conecta.Close();
                 return;
             }
-            string Query = "SELECT * FROM  VW_Dispositivos";
+            string Query = "SELECT * FROM  VW_Dispositivos WHERE UBICACION != "+"'ALMACÉN'";
             SqlDataReader Lector = null;
             Lector = UsoBD.Consulta(Query, Conecta);
             if (Lector == null)

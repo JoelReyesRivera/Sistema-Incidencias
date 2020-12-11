@@ -50,6 +50,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmConsultaAulasAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaAulasAdmin.Designer.cs">
+      <DependentUpon>frmConsultaAulasAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaDispositivoCambios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaDispositivoCambios.Designer.cs">
+      <DependentUpon>frmConsultaDispositivoCambios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaDispositivoIncidencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaDispositivoIncidencia.Designer.cs">
+      <DependentUpon>frmConsultaDispositivoIncidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaDispositivoIncidenciaTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaDispositivoIncidenciaTecnico.Designer.cs">
+      <DependentUpon>frmConsultaDispositivoIncidenciaTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCosultaIncidenciasAsignadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCosultaIncidenciasAsignadas.Designer.cs">
+      <DependentUpon>frmCosultaIncidenciasAsignadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAgregaDispositivo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +276,21 @@
     </Compile>
     <Compile Include="Tecnico.cs" />
     <Compile Include="Utileria.cs" />
+    <EmbeddedResource Include="frmConsultaAulasAdmin.resx">
+      <DependentUpon>frmConsultaAulasAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaDispositivoCambios.resx">
+      <DependentUpon>frmConsultaDispositivoCambios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaDispositivoIncidencia.resx">
+      <DependentUpon>frmConsultaDispositivoIncidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaDispositivoIncidenciaTecnico.resx">
+      <DependentUpon>frmConsultaDispositivoIncidenciaTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCosultaIncidenciasAsignadas.resx">
+      <DependentUpon>frmCosultaIncidenciasAsignadas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregaDispositivo.resx">
       <DependentUpon>frmAgregaDispositivo.cs</DependentUpon>
     </EmbeddedResource>

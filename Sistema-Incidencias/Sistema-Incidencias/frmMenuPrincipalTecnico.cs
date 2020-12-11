@@ -64,5 +64,22 @@ namespace Sistema_Incidencias
             frmConsultarConlcuidasTecnico frm = new frmConsultarConlcuidasTecnico(Usuario);
             frm.ShowDialog();
         }
+
+        private void enUsoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaDispositivos C = new frmConsultaDispositivos();
+            C.ShowDialog();
+        }
+
+        private void enAlmacénToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDispositivosEnAlmacen A = new frmDispositivosEnAlmacen();
+            A.ShowDialog();
+        }
+
+        private void frmMenuPrincipalTecnico_Load(object sender, EventArgs e)
+        {
+            lblUsuario.Text = Usuario;
+        }
     }
 }

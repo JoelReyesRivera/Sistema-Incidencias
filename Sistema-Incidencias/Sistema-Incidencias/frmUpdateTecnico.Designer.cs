@@ -39,9 +39,10 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(130, 39);
+            this.lblUsuario.Location = new System.Drawing.Point(98, 32);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(119, 36);
+            this.lblUsuario.Size = new System.Drawing.Size(96, 29);
             this.lblUsuario.TabIndex = 18;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -49,11 +50,11 @@
             // 
             this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(73, 87);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsuario.Location = new System.Drawing.Point(55, 71);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.ReadOnly = true;
-            this.txtUsuario.Size = new System.Drawing.Size(237, 34);
+            this.txtUsuario.Size = new System.Drawing.Size(179, 28);
             this.txtUsuario.TabIndex = 19;
             // 
             // cmbDepartamentoTecnico
@@ -61,29 +62,30 @@
             this.cmbDepartamentoTecnico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDepartamentoTecnico.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.cmbDepartamentoTecnico.FormattingEnabled = true;
-            this.cmbDepartamentoTecnico.Location = new System.Drawing.Point(78, 191);
-            this.cmbDepartamentoTecnico.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbDepartamentoTecnico.Location = new System.Drawing.Point(58, 155);
+            this.cmbDepartamentoTecnico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbDepartamentoTecnico.Name = "cmbDepartamentoTecnico";
-            this.cmbDepartamentoTecnico.Size = new System.Drawing.Size(232, 25);
+            this.cmbDepartamentoTecnico.Size = new System.Drawing.Size(175, 21);
             this.cmbDepartamentoTecnico.TabIndex = 22;
             // 
             // lblDepTecnico
             // 
             this.lblDepTecnico.AutoSize = true;
             this.lblDepTecnico.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepTecnico.Location = new System.Drawing.Point(44, 137);
+            this.lblDepTecnico.Location = new System.Drawing.Point(33, 111);
+            this.lblDepTecnico.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDepTecnico.Name = "lblDepTecnico";
-            this.lblDepTecnico.Size = new System.Drawing.Size(313, 36);
+            this.lblDepTecnico.Size = new System.Drawing.Size(258, 29);
             this.lblDepTecnico.TabIndex = 21;
             this.lblDepTecnico.Text = "Departamento Tecnico";
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(130, 249);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGuardar.Location = new System.Drawing.Point(98, 202);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(131, 46);
+            this.btnGuardar.Size = new System.Drawing.Size(98, 37);
             this.btnGuardar.TabIndex = 23;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -91,14 +93,15 @@
             // 
             // frmUpdateTecnico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 346);
+            this.ClientSize = new System.Drawing.Size(311, 281);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cmbDepartamentoTecnico);
             this.Controls.Add(this.lblDepTecnico);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblUsuario);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmUpdateTecnico";
             this.Text = "frmUpdateTecnico";
             this.Load += new System.EventHandler(this.frmUpdateTecnico_Load);

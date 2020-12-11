@@ -45,7 +45,7 @@ namespace Sistema_Incidencias
 
         private void frmMenuPrincipalJefeDep_Load(object sender, EventArgs e)
         {
-
+            lblUsuario.Text = Usuario;
         }
 
         private void altaToolStripMenuItem_Click(object sender, EventArgs e)
