@@ -135,5 +135,11 @@ namespace Sistema_Incidencias
             frmConsultaAulasAdmin A = new frmConsultaAulasAdmin();
             A.ShowDialog();
         }
+
+        private void consultaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConsultaDepartamentos C = new frmConsultaDepartamentos();
+            C.ShowDialog();
+        }
     }
 }

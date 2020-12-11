@@ -56,6 +56,12 @@
     <Compile Include="frmConsultaAulasAdmin.Designer.cs">
       <DependentUpon>frmConsultaAulasAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaDepartamentos.Designer.cs">
+      <DependentUpon>frmConsultaDepartamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaDispositivoCambios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +284,9 @@
     <Compile Include="Utileria.cs" />
     <EmbeddedResource Include="frmConsultaAulasAdmin.resx">
       <DependentUpon>frmConsultaAulasAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaDepartamentos.resx">
+      <DependentUpon>frmConsultaDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaDispositivoCambios.resx">
       <DependentUpon>frmConsultaDispositivoCambios.cs</DependentUpon>
