@@ -164,6 +164,7 @@ namespace Sistema_Incidencias
             string Marca = cmbMarca.SelectedItem.ToString();
             string Aula = cmbAula.SelectedItem.ToString();
             int R;
+            string Detalles = txtDetalles.Text;
 
             string Query = "SPAgregaDispositivo";
             SqlCommand cmd = new SqlCommand(Query, Conecta);
@@ -175,6 +176,7 @@ namespace Sistema_Incidencias
             cmd.Parameters.AddWithValue("@DESCRIPCION", Descripcion);
             cmd.Parameters.AddWithValue("@MARCA", Marca);
             cmd.Parameters.AddWithValue("@AULA", Aula);
+            cmd.Parameters.AddWithValue("@DETALLES", Detalles);
 
 
             SqlParameter returnParameter = cmd.Parameters.Add("Res", SqlDbType.Int);
@@ -216,6 +218,7 @@ namespace Sistema_Incidencias
             cmbMarca.SelectedIndex = -1;
             cmbProveedor.SelectedIndex = -1;
             dtpGarantíaExpira.Value = System.DateTime.Now;
+            txtDetalles.Text = "";
         }
         private bool ValidaDatos()
         {

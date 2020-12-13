@@ -47,7 +47,16 @@ namespace Sistema_Incidencias
                 dgvIncidencias.Rows.Clear();
                 while (Lector.Read())
                 {
-                    dgvIncidencias.Rows.Add(Lector.GetValue(1).ToString(), Lector.GetValue(2).ToString(), Lector.GetValue(3).ToString(), Lector.GetValue(4).ToString(), Lector.GetValue(5).ToString());
+                    String aprobado = Lector.GetValue(6).ToString();
+                    if (aprobado=="true")
+                    {
+                        aprobado = "SI";
+                    }
+                    else
+                    {
+                        aprobado = "NO";
+                    }
+                    dgvIncidencias.Rows.Add(Lector.GetValue(1).ToString(), Lector.GetValue(2).ToString(), Lector.GetValue(3).ToString(), Lector.GetValue(4).ToString(), Lector.GetValue(5).ToString(), aprobado);
                 }
             }
         }

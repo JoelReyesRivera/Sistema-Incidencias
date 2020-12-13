@@ -141,5 +141,11 @@ namespace Sistema_Incidencias
             frmConsultaDepartamentos C = new frmConsultaDepartamentos();
             C.ShowDialog();
         }
+
+        private void autorizarCambioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAutorizarCambio frm = new frmAutorizarCambio();
+            frm.ShowDialog();
+        }
     }
 }

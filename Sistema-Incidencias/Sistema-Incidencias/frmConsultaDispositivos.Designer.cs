@@ -34,6 +34,7 @@
             this.Modelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ubicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ubi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Garantia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -47,13 +48,14 @@
             this.Modelo,
             this.Marca,
             this.Ubicacion,
+            this.Ubi,
             this.Garantia});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1167, 450);
+            this.dataGridView1.Size = new System.Drawing.Size(1332, 450);
             this.dataGridView1.TabIndex = 0;
             // 
             // Numero
@@ -91,6 +93,13 @@
             this.Ubicacion.Name = "Ubicacion";
             this.Ubicacion.Width = 125;
             // 
+            // Ubi
+            // 
+            this.Ubi.HeaderText = "Detalle Ubicación";
+            this.Ubi.MinimumWidth = 6;
+            this.Ubi.Name = "Ubi";
+            this.Ubi.Width = 210;
+            // 
             // Garantia
             // 
             this.Garantia.HeaderText = "Garantia";
@@ -102,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 450);
+            this.ClientSize = new System.Drawing.Size(1332, 450);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmConsultaDispositivos";
             this.Text = "Dispositivos";
@@ -120,6 +129,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Modelo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ubicacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ubi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Garantia;
     }
 }

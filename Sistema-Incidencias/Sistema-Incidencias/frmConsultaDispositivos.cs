@@ -53,9 +53,10 @@ namespace Sistema_Incidencias
                     string modelo = Lector.GetValue(2).ToString();
                     string marca = Lector.GetValue(3).ToString();
                     string ubicacion = Lector.GetValue(4).ToString();
-                    string garantia = Lector.GetValue(5).ToString();
+                    string ubicacionDetalle = Lector.GetValue(5).ToString();
+                    string garantia = Lector.GetValue(6).ToString();
 
-                    dataGridView1.Rows.Add(numSerie,descripcion, modelo, marca, ubicacion, garantia);
+                    dataGridView1.Rows.Add(numSerie,descripcion, modelo, marca, ubicacion, ubicacionDetalle, garantia);
                 }
             }
             Conecta.Close();

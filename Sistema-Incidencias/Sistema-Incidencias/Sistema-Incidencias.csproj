@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAutorizarCambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutorizarCambio.Designer.cs">
+      <DependentUpon>frmAutorizarCambio.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaAulasAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     </Compile>
     <Compile Include="Tecnico.cs" />
     <Compile Include="Utileria.cs" />
+    <EmbeddedResource Include="frmAutorizarCambio.resx">
+      <DependentUpon>frmAutorizarCambio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaAulasAdmin.resx">
       <DependentUpon>frmConsultaAulasAdmin.cs</DependentUpon>
     </EmbeddedResource>
